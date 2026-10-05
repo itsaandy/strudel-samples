@@ -26,6 +26,22 @@ samples('https://raw.githubusercontent.com/itsaandy/strudel-samples/main/hyperpo
 See the [Hyperpop catalog](hyperpop/README.md) for groups and every playable name.
 The maps use the [Strudel custom sample format](https://strudel.cc/learn/samples/).
 
+## UKG
+
+154 WAV samples combined from 17 UK garage and speed garage packs, organized under
+[`ukg/`](ukg/). Includes individual drums, basses, vocal hits/hooks, keys, grooves,
+tops, fills, and FX. [See the catalog and source-pack list](ukg/README.md).
+
+```js
+samples('github:itsaandy/strudel-samples/ukg')
+s("kick_butter ~ clap_garage ~, hh_subtle*8")
+```
+
+The pack branch uses short names. In the combined root map, all UKG groups and
+named sounds have a `ukg_` prefix (`ukg_kick`, `ukg_kick_butter`, etc.), preserving
+existing Hyperpop aliases. Future packs should likewise use their pack prefix in
+the combined map; never silently replace previously published names or reorder indices.
+
 ## Repository format and pack branches (for maintainers and agents)
 
 `main` is the source of truth. Keep each pack in a lowercase folder named after

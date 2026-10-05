@@ -921,5 +921,655 @@
   ],
   "yah": [
     "hyperpop/vox/yah.wav"
+  ],
+  "ukg_bass": [
+    "ukg/bass/fm_womp_dmin.wav",
+    "ukg/bass/wata_d.wav"
+  ],
+  "ukg_bass_loop": [
+    "ukg/bass/loops/classic_reese_135_fmin.wav",
+    "ukg/bass/loops/deep_organ_135_dmin.wav",
+    "ukg/bass/loops/freak_fm_135_dmin.wav",
+    "ukg/bass/loops/gravity_reese_main_134_amin.wav",
+    "ukg/bass/loops/no_fund_wob_132_gmin.wav",
+    "ukg/bass/loops/organ_reese_132_gmin.wav",
+    "ukg/bass/loops/over_135_e.wav",
+    "ukg/bass/loops/pop_organ_132_gmin.wav",
+    "ukg/bass/loops/shake_groove_132_cm.wav",
+    "ukg/bass/loops/solar_131_amin.wav",
+    "ukg/bass/loops/trappy_subsonic_132_cm.wav",
+    "ukg/bass/loops/turnt_128_dsm.wav"
+  ],
+  "ukg_clap": [
+    "ukg/clap/boosted.wav",
+    "ukg/clap/crunch.wav",
+    "ukg/clap/crunchy_follow.wav",
+    "ukg/clap/energic.wav",
+    "ukg/clap/fast.wav",
+    "ukg/clap/garage.wav",
+    "ukg/clap/hard_feel.wav",
+    "ukg/clap/layer.wav",
+    "ukg/clap/punchy_flex.wav",
+    "ukg/clap/simply.wav",
+    "ukg/clap/wheel_up.wav"
+  ],
+  "ukg_drums": [
+    "ukg/drums/bullett_140.wav",
+    "ukg/drums/kick_snare_silky_130.wav",
+    "ukg/drums/london_dance_132.wav",
+    "ukg/drums/modern_132.wav",
+    "ukg/drums/tidy_step_132.wav",
+    "ukg/drums/vibez_135.wav",
+    "ukg/drums/vinyl_pitched_snare_135.wav",
+    "ukg/drums/wave_140.wav"
+  ],
+  "ukg_fills": [
+    "ukg/fills/down_137.wav",
+    "ukg/fills/jet_fuel_kick_scratch_135.wav",
+    "ukg/fills/mini_135.wav",
+    "ukg/fills/stay_spinback_135.wav"
+  ],
+  "ukg_fx": [
+    "ukg/fx/clash_lazer_132_gmin.wav",
+    "ukg/fx/kick_blast_135.wav",
+    "ukg/fx/operator_phone_lick_shot_am.wav",
+    "ukg/fx/rewind_135.wav",
+    "ukg/fx/riser_everything_chop.wav",
+    "ukg/fx/scratch_132_gmin.wav",
+    "ukg/fx/siren_liver.wav",
+    "ukg/fx/soundclash_sirenshot_135.wav",
+    "ukg/fx/sweep_up_reversed.wav",
+    "ukg/fx/tape_spinback.wav",
+    "ukg/fx/upsweep_slow.wav",
+    "ukg/fx/white_crash_132_gmin.wav"
+  ],
+  "ukg_fx_loop": [
+    "ukg/fx/loops/vinyl_kicker_130.wav",
+    "ukg/fx/loops/vinyl_scratch_train_cuts_130.wav"
+  ],
+  "ukg_hh": [
+    "ukg/hh/chocolate.wav",
+    "ukg/hh/low_ghost.wav",
+    "ukg/hh/mid_vanilla.wav",
+    "ukg/hh/noise_feel.wav",
+    "ukg/hh/subtle.wav",
+    "ukg/hh/tech.wav",
+    "ukg/hh/ukg.wav",
+    "ukg/hh/white.wav"
+  ],
+  "ukg_keys_loop": [
+    "ukg/keys/loops/chord_holloway_rd_135_ebmaj.wav",
+    "ukg/keys/loops/chord_knowledge_131_gmin.wav",
+    "ukg/keys/loops/chord_orwell_131_amin.wav",
+    "ukg/keys/loops/chords_bp_135_gmin.wav",
+    "ukg/keys/loops/chords_fluff_132_gmin.wav",
+    "ukg/keys/loops/chords_organism_135_dmin.wav",
+    "ukg/keys/loops/chords_pantastic_135_dmin.wav",
+    "ukg/keys/loops/electric_piano_melody_silky_130_dsm.wav",
+    "ukg/keys/loops/lead_mini_org_135_dmin.wav",
+    "ukg/keys/loops/melody_strings_132_cm.wav",
+    "ukg/keys/loops/organ_bounce_master_130_dsm.wav",
+    "ukg/keys/loops/piano_chords_master_130_dsm.wav",
+    "ukg/keys/loops/songstarter_silky_130_dsm.wav"
+  ],
+  "ukg_kick": [
+    "ukg/kick/best_hard.wav",
+    "ukg/kick/bright_flex.wav",
+    "ukg/kick/butter.wav",
+    "ukg/kick/deep_follow.wav",
+    "ukg/kick/drier.wav",
+    "ukg/kick/hittin.wav",
+    "ukg/kick/p.wav",
+    "ukg/kick/punchy.wav",
+    "ukg/kick/ringing_gravity.wav",
+    "ukg/kick/wine.wav"
+  ],
+  "ukg_oh": [
+    "ukg/oh/long_broken.wav",
+    "ukg/oh/short.wav",
+    "ukg/oh/tsunami_tamb.wav",
+    "ukg/oh/white.wav"
+  ],
+  "ukg_perc": [
+    "ukg/perc/clicky_follow.wav",
+    "ukg/perc/crash_909.wav",
+    "ukg/perc/crash_best_short.wav",
+    "ukg/perc/crash_fast.wav",
+    "ukg/perc/crash_finisher.wav",
+    "ukg/perc/crash_instinct.wav",
+    "ukg/perc/crash_jet_fuel.wav",
+    "ukg/perc/crash_standard.wav",
+    "ukg/perc/djembe_low.wav",
+    "ukg/perc/knock_flex.wav",
+    "ukg/perc/low_thock.wav",
+    "ukg/perc/shaker_classic.wav",
+    "ukg/perc/shaker_fast_roll_flex.wav"
+  ],
+  "ukg_perc_loop": [
+    "ukg/perc/loops/record_player_135.wav",
+    "ukg/perc/loops/shaker_swing_135.wav",
+    "ukg/perc/loops/shuffler_132.wav"
+  ],
+  "ukg_snare": [
+    "ukg/snare/909.wav",
+    "ukg/snare/breaker.wav",
+    "ukg/snare/high_blade.wav",
+    "ukg/snare/high_tikk.wav",
+    "ukg/snare/jungle.wav",
+    "ukg/snare/linn.wav",
+    "ukg/snare/rim_garage.wav",
+    "ukg/snare/rimsnare.wav"
+  ],
+  "ukg_tops": [
+    "ukg/tops/again_138.wav",
+    "ukg/tops/alarmed_140.wav",
+    "ukg/tops/analog_foley_hat_131.wav",
+    "ukg/tops/best_136.wav",
+    "ukg/tops/broken_intro_134.wav",
+    "ukg/tops/bullett_140.wav",
+    "ukg/tops/cambridge_perc_snare_132.wav",
+    "ukg/tops/dubwise_135.wav",
+    "ukg/tops/gurleys_radio_130.wav",
+    "ukg/tops/hats_follow_134.wav",
+    "ukg/tops/right_136.wav",
+    "ukg/tops/summer_135.wav",
+    "ukg/tops/sunderland_perc_snare_132.wav",
+    "ukg/tops/survivor_135.wav",
+    "ukg/tops/vibez_135.wav"
+  ],
+  "ukg_vox": [
+    "ukg/vox/ah.wav",
+    "ukg/vox/baker_haha_dry.wav",
+    "ukg/vox/gamble_vandel_dry_136.wav",
+    "ukg/vox/gamble_what_dry.wav",
+    "ukg/vox/talk_to_me_dsm.wav"
+  ],
+  "ukg_vox_loop": [
+    "ukg/vox/loops/attack_dry_135.wav",
+    "ukg/vox/loops/attack_more_dry_135.wav",
+    "ukg/vox/loops/baker_vangogh_dry_136.wav",
+    "ukg/vox/loops/baker_vangogh_wet_136.wav",
+    "ukg/vox/loops/beat_hold_back_dry_134.wav",
+    "ukg/vox/loops/bullet_140_e.wav",
+    "ukg/vox/loops/chop_everybody_134.wav",
+    "ukg/vox/loops/chop_harrow_wet_135_dsm.wav",
+    "ukg/vox/loops/chop_killa_illa_140.wav",
+    "ukg/vox/loops/chop_killer_cardio_140.wav",
+    "ukg/vox/loops/chop_the_top_one_140.wav",
+    "ukg/vox/loops/criminal_ambience_132_gm.wav",
+    "ukg/vox/loops/criminal_physical_dry_138.wav",
+    "ukg/vox/loops/droptop_wet_138.wav",
+    "ukg/vox/loops/feel_bridge_stack_dry_142_emin.wav",
+    "ukg/vox/loops/fx_so_134.wav",
+    "ukg/vox/loops/gamble_dry_136.wav",
+    "ukg/vox/loops/harmony_feel_chorus_double_wet_142_emin.wav",
+    "ukg/vox/loops/microphone_killa_wet_140.wav",
+    "ukg/vox/loops/over_135_e.wav",
+    "ukg/vox/loops/short_i_remember_wet_120_dsm.wav",
+    "ukg/vox/loops/take_your_body_higher_alt_wet_135_dsm.wav",
+    "ukg/vox/loops/take_your_body_higher_wet_135_dsm.wav",
+    "ukg/vox/loops/that_look_pitched_wet_130.wav"
+  ],
+  "ukg_bass_fm_womp": [
+    "ukg/bass/fm_womp_dmin.wav"
+  ],
+  "ukg_bass_wata": [
+    "ukg/bass/wata_d.wav"
+  ],
+  "ukg_bass_loop_classic_reese": [
+    "ukg/bass/loops/classic_reese_135_fmin.wav"
+  ],
+  "ukg_bass_loop_deep_organ": [
+    "ukg/bass/loops/deep_organ_135_dmin.wav"
+  ],
+  "ukg_bass_loop_freak_fm": [
+    "ukg/bass/loops/freak_fm_135_dmin.wav"
+  ],
+  "ukg_bass_loop_gravity_reese_main": [
+    "ukg/bass/loops/gravity_reese_main_134_amin.wav"
+  ],
+  "ukg_bass_loop_no_fund_wob": [
+    "ukg/bass/loops/no_fund_wob_132_gmin.wav"
+  ],
+  "ukg_bass_loop_organ_reese": [
+    "ukg/bass/loops/organ_reese_132_gmin.wav"
+  ],
+  "ukg_bass_loop_over": [
+    "ukg/bass/loops/over_135_e.wav"
+  ],
+  "ukg_bass_loop_pop_organ": [
+    "ukg/bass/loops/pop_organ_132_gmin.wav"
+  ],
+  "ukg_bass_loop_shake_groove": [
+    "ukg/bass/loops/shake_groove_132_cm.wav"
+  ],
+  "ukg_bass_loop_solar": [
+    "ukg/bass/loops/solar_131_amin.wav"
+  ],
+  "ukg_bass_loop_trappy_subsonic": [
+    "ukg/bass/loops/trappy_subsonic_132_cm.wav"
+  ],
+  "ukg_bass_loop_turnt": [
+    "ukg/bass/loops/turnt_128_dsm.wav"
+  ],
+  "ukg_clap_boosted": [
+    "ukg/clap/boosted.wav"
+  ],
+  "ukg_clap_crunch": [
+    "ukg/clap/crunch.wav"
+  ],
+  "ukg_clap_crunchy_follow": [
+    "ukg/clap/crunchy_follow.wav"
+  ],
+  "ukg_clap_energic": [
+    "ukg/clap/energic.wav"
+  ],
+  "ukg_clap_fast": [
+    "ukg/clap/fast.wav"
+  ],
+  "ukg_clap_garage": [
+    "ukg/clap/garage.wav"
+  ],
+  "ukg_clap_hard_feel": [
+    "ukg/clap/hard_feel.wav"
+  ],
+  "ukg_clap_layer": [
+    "ukg/clap/layer.wav"
+  ],
+  "ukg_clap_punchy_flex": [
+    "ukg/clap/punchy_flex.wav"
+  ],
+  "ukg_clap_simply": [
+    "ukg/clap/simply.wav"
+  ],
+  "ukg_clap_wheel_up": [
+    "ukg/clap/wheel_up.wav"
+  ],
+  "ukg_drums_bullett": [
+    "ukg/drums/bullett_140.wav"
+  ],
+  "ukg_drums_kick_snare_silky": [
+    "ukg/drums/kick_snare_silky_130.wav"
+  ],
+  "ukg_drums_london_dance": [
+    "ukg/drums/london_dance_132.wav"
+  ],
+  "ukg_drums_modern": [
+    "ukg/drums/modern_132.wav"
+  ],
+  "ukg_drums_tidy_step": [
+    "ukg/drums/tidy_step_132.wav"
+  ],
+  "ukg_drums_vibez": [
+    "ukg/drums/vibez_135.wav"
+  ],
+  "ukg_drums_vinyl_pitched_snare": [
+    "ukg/drums/vinyl_pitched_snare_135.wav"
+  ],
+  "ukg_drums_wave": [
+    "ukg/drums/wave_140.wav"
+  ],
+  "ukg_fills_down": [
+    "ukg/fills/down_137.wav"
+  ],
+  "ukg_fills_jet_fuel_kick_scratch": [
+    "ukg/fills/jet_fuel_kick_scratch_135.wav"
+  ],
+  "ukg_fills_mini": [
+    "ukg/fills/mini_135.wav"
+  ],
+  "ukg_fills_stay_spinback": [
+    "ukg/fills/stay_spinback_135.wav"
+  ],
+  "ukg_fx_clash_lazer": [
+    "ukg/fx/clash_lazer_132_gmin.wav"
+  ],
+  "ukg_fx_kick_blast": [
+    "ukg/fx/kick_blast_135.wav"
+  ],
+  "ukg_fx_operator_phone_lick_shot": [
+    "ukg/fx/operator_phone_lick_shot_am.wav"
+  ],
+  "ukg_fx_rewind": [
+    "ukg/fx/rewind_135.wav"
+  ],
+  "ukg_fx_riser_everything_chop": [
+    "ukg/fx/riser_everything_chop.wav"
+  ],
+  "ukg_fx_scratch": [
+    "ukg/fx/scratch_132_gmin.wav"
+  ],
+  "ukg_fx_siren_liver": [
+    "ukg/fx/siren_liver.wav"
+  ],
+  "ukg_fx_soundclash_sirenshot": [
+    "ukg/fx/soundclash_sirenshot_135.wav"
+  ],
+  "ukg_fx_sweep_up_reversed": [
+    "ukg/fx/sweep_up_reversed.wav"
+  ],
+  "ukg_fx_tape_spinback": [
+    "ukg/fx/tape_spinback.wav"
+  ],
+  "ukg_fx_upsweep_slow": [
+    "ukg/fx/upsweep_slow.wav"
+  ],
+  "ukg_fx_white_crash": [
+    "ukg/fx/white_crash_132_gmin.wav"
+  ],
+  "ukg_fx_loop_vinyl_kicker": [
+    "ukg/fx/loops/vinyl_kicker_130.wav"
+  ],
+  "ukg_fx_loop_vinyl_scratch_train_cuts": [
+    "ukg/fx/loops/vinyl_scratch_train_cuts_130.wav"
+  ],
+  "ukg_hh_chocolate": [
+    "ukg/hh/chocolate.wav"
+  ],
+  "ukg_hh_low_ghost": [
+    "ukg/hh/low_ghost.wav"
+  ],
+  "ukg_hh_mid_vanilla": [
+    "ukg/hh/mid_vanilla.wav"
+  ],
+  "ukg_hh_noise_feel": [
+    "ukg/hh/noise_feel.wav"
+  ],
+  "ukg_hh_subtle": [
+    "ukg/hh/subtle.wav"
+  ],
+  "ukg_hh_tech": [
+    "ukg/hh/tech.wav"
+  ],
+  "ukg_hh_ukg": [
+    "ukg/hh/ukg.wav"
+  ],
+  "ukg_hh_white": [
+    "ukg/hh/white.wav"
+  ],
+  "ukg_keys_loop_chord_holloway_rd": [
+    "ukg/keys/loops/chord_holloway_rd_135_ebmaj.wav"
+  ],
+  "ukg_keys_loop_chord_knowledge": [
+    "ukg/keys/loops/chord_knowledge_131_gmin.wav"
+  ],
+  "ukg_keys_loop_chord_orwell": [
+    "ukg/keys/loops/chord_orwell_131_amin.wav"
+  ],
+  "ukg_keys_loop_chords_bp": [
+    "ukg/keys/loops/chords_bp_135_gmin.wav"
+  ],
+  "ukg_keys_loop_chords_fluff": [
+    "ukg/keys/loops/chords_fluff_132_gmin.wav"
+  ],
+  "ukg_keys_loop_chords_organism": [
+    "ukg/keys/loops/chords_organism_135_dmin.wav"
+  ],
+  "ukg_keys_loop_chords_pantastic": [
+    "ukg/keys/loops/chords_pantastic_135_dmin.wav"
+  ],
+  "ukg_keys_loop_electric_piano_melody_silky": [
+    "ukg/keys/loops/electric_piano_melody_silky_130_dsm.wav"
+  ],
+  "ukg_keys_loop_lead_mini_org": [
+    "ukg/keys/loops/lead_mini_org_135_dmin.wav"
+  ],
+  "ukg_keys_loop_melody_strings": [
+    "ukg/keys/loops/melody_strings_132_cm.wav"
+  ],
+  "ukg_keys_loop_organ_bounce_master": [
+    "ukg/keys/loops/organ_bounce_master_130_dsm.wav"
+  ],
+  "ukg_keys_loop_piano_chords_master": [
+    "ukg/keys/loops/piano_chords_master_130_dsm.wav"
+  ],
+  "ukg_keys_loop_songstarter_silky": [
+    "ukg/keys/loops/songstarter_silky_130_dsm.wav"
+  ],
+  "ukg_kick_best_hard": [
+    "ukg/kick/best_hard.wav"
+  ],
+  "ukg_kick_bright_flex": [
+    "ukg/kick/bright_flex.wav"
+  ],
+  "ukg_kick_butter": [
+    "ukg/kick/butter.wav"
+  ],
+  "ukg_kick_deep_follow": [
+    "ukg/kick/deep_follow.wav"
+  ],
+  "ukg_kick_drier": [
+    "ukg/kick/drier.wav"
+  ],
+  "ukg_kick_hittin": [
+    "ukg/kick/hittin.wav"
+  ],
+  "ukg_kick_p": [
+    "ukg/kick/p.wav"
+  ],
+  "ukg_kick_punchy": [
+    "ukg/kick/punchy.wav"
+  ],
+  "ukg_kick_ringing_gravity": [
+    "ukg/kick/ringing_gravity.wav"
+  ],
+  "ukg_kick_wine": [
+    "ukg/kick/wine.wav"
+  ],
+  "ukg_oh_long_broken": [
+    "ukg/oh/long_broken.wav"
+  ],
+  "ukg_oh_short": [
+    "ukg/oh/short.wav"
+  ],
+  "ukg_oh_tsunami_tamb": [
+    "ukg/oh/tsunami_tamb.wav"
+  ],
+  "ukg_oh_white": [
+    "ukg/oh/white.wav"
+  ],
+  "ukg_perc_clicky_follow": [
+    "ukg/perc/clicky_follow.wav"
+  ],
+  "ukg_perc_crash_909": [
+    "ukg/perc/crash_909.wav"
+  ],
+  "ukg_perc_crash_best_short": [
+    "ukg/perc/crash_best_short.wav"
+  ],
+  "ukg_perc_crash_fast": [
+    "ukg/perc/crash_fast.wav"
+  ],
+  "ukg_perc_crash_finisher": [
+    "ukg/perc/crash_finisher.wav"
+  ],
+  "ukg_perc_crash_instinct": [
+    "ukg/perc/crash_instinct.wav"
+  ],
+  "ukg_perc_crash_jet_fuel": [
+    "ukg/perc/crash_jet_fuel.wav"
+  ],
+  "ukg_perc_crash_standard": [
+    "ukg/perc/crash_standard.wav"
+  ],
+  "ukg_perc_djembe_low": [
+    "ukg/perc/djembe_low.wav"
+  ],
+  "ukg_perc_knock_flex": [
+    "ukg/perc/knock_flex.wav"
+  ],
+  "ukg_perc_low_thock": [
+    "ukg/perc/low_thock.wav"
+  ],
+  "ukg_perc_shaker_classic": [
+    "ukg/perc/shaker_classic.wav"
+  ],
+  "ukg_perc_shaker_fast_roll_flex": [
+    "ukg/perc/shaker_fast_roll_flex.wav"
+  ],
+  "ukg_perc_loop_record_player": [
+    "ukg/perc/loops/record_player_135.wav"
+  ],
+  "ukg_perc_loop_shaker_swing": [
+    "ukg/perc/loops/shaker_swing_135.wav"
+  ],
+  "ukg_perc_loop_shuffler": [
+    "ukg/perc/loops/shuffler_132.wav"
+  ],
+  "ukg_snare_909": [
+    "ukg/snare/909.wav"
+  ],
+  "ukg_snare_breaker": [
+    "ukg/snare/breaker.wav"
+  ],
+  "ukg_snare_high_blade": [
+    "ukg/snare/high_blade.wav"
+  ],
+  "ukg_snare_high_tikk": [
+    "ukg/snare/high_tikk.wav"
+  ],
+  "ukg_snare_jungle": [
+    "ukg/snare/jungle.wav"
+  ],
+  "ukg_snare_linn": [
+    "ukg/snare/linn.wav"
+  ],
+  "ukg_snare_rim_garage": [
+    "ukg/snare/rim_garage.wav"
+  ],
+  "ukg_snare_rimsnare": [
+    "ukg/snare/rimsnare.wav"
+  ],
+  "ukg_tops_again": [
+    "ukg/tops/again_138.wav"
+  ],
+  "ukg_tops_alarmed": [
+    "ukg/tops/alarmed_140.wav"
+  ],
+  "ukg_tops_analog_foley_hat": [
+    "ukg/tops/analog_foley_hat_131.wav"
+  ],
+  "ukg_tops_best": [
+    "ukg/tops/best_136.wav"
+  ],
+  "ukg_tops_broken_intro": [
+    "ukg/tops/broken_intro_134.wav"
+  ],
+  "ukg_tops_bullett": [
+    "ukg/tops/bullett_140.wav"
+  ],
+  "ukg_tops_cambridge_perc_snare": [
+    "ukg/tops/cambridge_perc_snare_132.wav"
+  ],
+  "ukg_tops_dubwise": [
+    "ukg/tops/dubwise_135.wav"
+  ],
+  "ukg_tops_gurleys_radio": [
+    "ukg/tops/gurleys_radio_130.wav"
+  ],
+  "ukg_tops_hats_follow": [
+    "ukg/tops/hats_follow_134.wav"
+  ],
+  "ukg_tops_right": [
+    "ukg/tops/right_136.wav"
+  ],
+  "ukg_tops_summer": [
+    "ukg/tops/summer_135.wav"
+  ],
+  "ukg_tops_sunderland_perc_snare": [
+    "ukg/tops/sunderland_perc_snare_132.wav"
+  ],
+  "ukg_tops_survivor": [
+    "ukg/tops/survivor_135.wav"
+  ],
+  "ukg_tops_vibez": [
+    "ukg/tops/vibez_135.wav"
+  ],
+  "ukg_vox_ah": [
+    "ukg/vox/ah.wav"
+  ],
+  "ukg_vox_baker_haha_dry": [
+    "ukg/vox/baker_haha_dry.wav"
+  ],
+  "ukg_vox_gamble_vandel_dry": [
+    "ukg/vox/gamble_vandel_dry_136.wav"
+  ],
+  "ukg_vox_gamble_what_dry": [
+    "ukg/vox/gamble_what_dry.wav"
+  ],
+  "ukg_vox_talk_to_me": [
+    "ukg/vox/talk_to_me_dsm.wav"
+  ],
+  "ukg_vox_loop_attack_dry": [
+    "ukg/vox/loops/attack_dry_135.wav"
+  ],
+  "ukg_vox_loop_attack_more_dry": [
+    "ukg/vox/loops/attack_more_dry_135.wav"
+  ],
+  "ukg_vox_loop_baker_vangogh_dry": [
+    "ukg/vox/loops/baker_vangogh_dry_136.wav"
+  ],
+  "ukg_vox_loop_baker_vangogh_wet": [
+    "ukg/vox/loops/baker_vangogh_wet_136.wav"
+  ],
+  "ukg_vox_loop_beat_hold_back_dry": [
+    "ukg/vox/loops/beat_hold_back_dry_134.wav"
+  ],
+  "ukg_vox_loop_bullet": [
+    "ukg/vox/loops/bullet_140_e.wav"
+  ],
+  "ukg_vox_loop_chop_everybody": [
+    "ukg/vox/loops/chop_everybody_134.wav"
+  ],
+  "ukg_vox_loop_chop_harrow_wet": [
+    "ukg/vox/loops/chop_harrow_wet_135_dsm.wav"
+  ],
+  "ukg_vox_loop_chop_killa_illa": [
+    "ukg/vox/loops/chop_killa_illa_140.wav"
+  ],
+  "ukg_vox_loop_chop_killer_cardio": [
+    "ukg/vox/loops/chop_killer_cardio_140.wav"
+  ],
+  "ukg_vox_loop_chop_the_top_one": [
+    "ukg/vox/loops/chop_the_top_one_140.wav"
+  ],
+  "ukg_vox_loop_criminal_ambience": [
+    "ukg/vox/loops/criminal_ambience_132_gm.wav"
+  ],
+  "ukg_vox_loop_criminal_physical_dry": [
+    "ukg/vox/loops/criminal_physical_dry_138.wav"
+  ],
+  "ukg_vox_loop_droptop_wet": [
+    "ukg/vox/loops/droptop_wet_138.wav"
+  ],
+  "ukg_vox_loop_feel_bridge_stack_dry": [
+    "ukg/vox/loops/feel_bridge_stack_dry_142_emin.wav"
+  ],
+  "ukg_vox_loop_fx_so": [
+    "ukg/vox/loops/fx_so_134.wav"
+  ],
+  "ukg_vox_loop_gamble_dry": [
+    "ukg/vox/loops/gamble_dry_136.wav"
+  ],
+  "ukg_vox_loop_harmony_feel_chorus_double_wet": [
+    "ukg/vox/loops/harmony_feel_chorus_double_wet_142_emin.wav"
+  ],
+  "ukg_vox_loop_microphone_killa_wet": [
+    "ukg/vox/loops/microphone_killa_wet_140.wav"
+  ],
+  "ukg_vox_loop_over": [
+    "ukg/vox/loops/over_135_e.wav"
+  ],
+  "ukg_vox_loop_short_i_remember_wet": [
+    "ukg/vox/loops/short_i_remember_wet_120_dsm.wav"
+  ],
+  "ukg_vox_loop_take_your_body_higher_alt_wet": [
+    "ukg/vox/loops/take_your_body_higher_alt_wet_135_dsm.wav"
+  ],
+  "ukg_vox_loop_take_your_body_higher_wet": [
+    "ukg/vox/loops/take_your_body_higher_wet_135_dsm.wav"
+  ],
+  "ukg_vox_loop_that_look_pitched_wet": [
+    "ukg/vox/loops/that_look_pitched_wet_130.wav"
   ]
 }
