@@ -1,0 +1,925 @@
+{
+  "_base": "https://raw.githubusercontent.com/itsaandy/strudel-samples/hyperpop/",
+  "down": [
+    "down/airship.wav",
+    "down/flutter.wav",
+    "down/frantic.wav",
+    "down/insects.wav",
+    "down/razor.wav",
+    "down/scrape.wav",
+    "down/shepard.wav",
+    "down/snarl.wav",
+    "down/square.wav",
+    "down/static.wav"
+  ],
+  "drums": [
+    "drums/clicks_170.wav",
+    "drums/clicks_170_tops.wav",
+    "drums/creaky_170.wav",
+    "drums/creaky_170_tops.wav",
+    "drums/grind_140.wav",
+    "drums/grind_140_tops.wav",
+    "drums/heavy_120.wav",
+    "drums/heavy_120_tops.wav",
+    "drums/hop_100.wav",
+    "drums/hop_100_tops.wav",
+    "drums/house_120.wav",
+    "drums/house_120_tops.wav",
+    "drums/jump_140.wav",
+    "drums/jump_140_tops.wav",
+    "drums/loud_140.wav",
+    "drums/loud_140_tops.wav",
+    "drums/nod_170.wav",
+    "drums/nod_170_tops.wav",
+    "drums/scraps_100.wav",
+    "drums/scraps_100_tops.wav",
+    "drums/scream_140.wav",
+    "drums/scream_140_tops.wav",
+    "drums/snarl_120.wav",
+    "drums/snarl_120_tops.wav",
+    "drums/spacey_100.wav",
+    "drums/spacey_100_tops.wav",
+    "drums/squeaky_120.wav",
+    "drums/squeaky_120_tops.wav",
+    "drums/stomp_100.wav",
+    "drums/stomp_100_tops.wav",
+    "drums/wet_170.wav",
+    "drums/wet_170_tops.wav"
+  ],
+  "extra": [
+    "extra/arpeggio_down.wav",
+    "extra/arpeggio_up.wav",
+    "extra/bells_high.wav",
+    "extra/bells_low.wav",
+    "extra/crush.wav",
+    "extra/double_metal.wav",
+    "extra/glass_g.wav",
+    "extra/harp_bb.wav",
+    "extra/metal.wav",
+    "extra/oboe_a.wav",
+    "extra/piano_01_cs.wav",
+    "extra/piano_02_fs.wav",
+    "extra/pluck_d.wav",
+    "extra/pong_cs.wav",
+    "extra/trumpet_g.wav"
+  ],
+  "hh": [
+    "hh/clicks.wav",
+    "hh/knife.wav",
+    "hh/lazer.wav",
+    "hh/metallic.wav",
+    "hh/noisy.wav",
+    "hh/ring.wav",
+    "hh/sharp.wav",
+    "hh/squeak.wav",
+    "hh/tight.wav"
+  ],
+  "hh_wet": [
+    "hh_wet/clicks.wav",
+    "hh_wet/knife.wav",
+    "hh_wet/lazer.wav",
+    "hh_wet/metallic.wav",
+    "hh_wet/noisy.wav",
+    "hh_wet/ring.wav",
+    "hh_wet/sharp.wav",
+    "hh_wet/squeak.wav",
+    "hh_wet/tight.wav"
+  ],
+  "kick": [
+    "kick/clappy_g.wav",
+    "kick/clicky_c.wav",
+    "kick/cute_c.wav",
+    "kick/long_c.wav",
+    "kick/metallic_c.wav",
+    "kick/metallic_drive_c.wav",
+    "kick/plucky_c.wav",
+    "kick/plucky_drive_c.wav",
+    "kick/squelch_c.wav",
+    "kick/stomp_c.wav",
+    "kick/wet_c.wav",
+    "kick/wooden_c.wav"
+  ],
+  "melody": [
+    "melody/airy_organ_130_amin.wav",
+    "melody/cheesy_115_c.wav",
+    "melody/cutesy_105_amin.wav",
+    "melody/gallop_120_bmin.wav",
+    "melody/grainy_135_emin.wav",
+    "melody/indifferent_120_amin.wav",
+    "melody/intense_arpeggio_150_emin.wav",
+    "melody/low_125_f.wav",
+    "melody/plucks_140_a.wav",
+    "melody/strum_90_e.wav",
+    "melody/vocal_120_c.wav"
+  ],
+  "perc": [
+    "perc/bounce.wav",
+    "perc/bowl.wav",
+    "perc/buzzy.wav",
+    "perc/clap.wav",
+    "perc/coo.wav",
+    "perc/double.wav",
+    "perc/echo.wav",
+    "perc/hollow.wav",
+    "perc/jitter.wav",
+    "perc/lazers.wav",
+    "perc/open.wav",
+    "perc/pin.wav",
+    "perc/pluck.wav",
+    "perc/rev.wav",
+    "perc/ring.wav",
+    "perc/riser.wav",
+    "perc/scrape.wav",
+    "perc/shaker.wav",
+    "perc/smack.wav",
+    "perc/squeal.wav",
+    "perc/static.wav",
+    "perc/step.wav",
+    "perc/stomp.wav",
+    "perc/strum.wav",
+    "perc/sweep.wav",
+    "perc/toaster.wav",
+    "perc/verb.wav",
+    "perc/wiggle.wav",
+    "perc/woo.wav",
+    "perc/wood.wav"
+  ],
+  "snare": [
+    "snare/clap.wav",
+    "snare/double.wav",
+    "snare/hollow.wav",
+    "snare/lazer.wav",
+    "snare/pluck.wav",
+    "snare/smack.wav",
+    "snare/snap.wav",
+    "snare/spring.wav",
+    "snare/sustained.wav",
+    "snare/vocal.wav"
+  ],
+  "snare_wet": [
+    "snare_wet/clap.wav",
+    "snare_wet/double.wav",
+    "snare_wet/hollow.wav",
+    "snare_wet/lazer.wav",
+    "snare_wet/pluck.wav",
+    "snare_wet/smack.wav",
+    "snare_wet/snap.wav",
+    "snare_wet/spring.wav",
+    "snare_wet/sustained.wav",
+    "snare_wet/vocal.wav"
+  ],
+  "synth": [
+    "synth/bubble_c.wav",
+    "synth/coin_c.wav",
+    "synth/dramatic_c.wav",
+    "synth/noisy_c.wav",
+    "synth/pluck_bass_fs.wav",
+    "synth/ringing_c.wav",
+    "synth/riser_c.wav",
+    "synth/string_c.wav",
+    "synth/sweep_c.wav",
+    "synth/wobble_c.wav"
+  ],
+  "synth_wet": [
+    "synth_wet/bubble_c.wav",
+    "synth_wet/coin_c.wav",
+    "synth_wet/dramatic_c.wav",
+    "synth_wet/noisy_c.wav",
+    "synth_wet/pluck_bass_fs.wav",
+    "synth_wet/ringing_c.wav",
+    "synth_wet/riser_c.wav",
+    "synth_wet/string_c.wav",
+    "synth_wet/sweep_c.wav",
+    "synth_wet/wobble_c.wav"
+  ],
+  "texture": [
+    "texture/boar.wav",
+    "texture/crackle.wav",
+    "texture/creaky.wav",
+    "texture/crying.wav",
+    "texture/echo.wav",
+    "texture/glass.wav",
+    "texture/paper.wav",
+    "texture/propeller.wav",
+    "texture/scattered.wav",
+    "texture/scrape.wav",
+    "texture/snarling.wav",
+    "texture/tin.wav",
+    "texture/underwater.wav",
+    "texture/warehouse.wav",
+    "texture/washy.wav"
+  ],
+  "up": [
+    "up/creatures.wav",
+    "up/fade.wav",
+    "up/gasping.wav",
+    "up/hover.wav",
+    "up/itchy.wav",
+    "up/meow.wav",
+    "up/motor.wav",
+    "up/propeller.wav",
+    "up/quick.wav",
+    "up/spiky.wav"
+  ],
+  "vox": [
+    "vox/airy_a.wav",
+    "vox/bwoh_g.wav",
+    "vox/cough_eb.wav",
+    "vox/distorted.wav",
+    "vox/eugh_a.wav",
+    "vox/full_a.wav",
+    "vox/gou_g.wav",
+    "vox/hah.wav",
+    "vox/heh.wav",
+    "vox/hehe_fs.wav",
+    "vox/hey.wav",
+    "vox/hiccup.wav",
+    "vox/high_a.wav",
+    "vox/hih.wav",
+    "vox/hmph.wav",
+    "vox/hoh_b.wav",
+    "vox/hooh.wav",
+    "vox/huh.wav",
+    "vox/kwoh_g.wav",
+    "vox/owah_eb.wav",
+    "vox/pluck_g.wav",
+    "vox/reverb_f.wav",
+    "vox/short_ab.wav",
+    "vox/soft_f.wav",
+    "vox/stutter_eb_f.wav",
+    "vox/throat.wav",
+    "vox/whine_cs.wav",
+    "vox/whistle.wav",
+    "vox/who_fs.wav",
+    "vox/yah.wav"
+  ],
+  "airy": [
+    "vox/airy_a.wav"
+  ],
+  "bwoh": [
+    "vox/bwoh_g.wav"
+  ],
+  "cough": [
+    "vox/cough_eb.wav"
+  ],
+  "distorted": [
+    "vox/distorted.wav"
+  ],
+  "down_airship": [
+    "down/airship.wav"
+  ],
+  "down_flutter": [
+    "down/flutter.wav"
+  ],
+  "down_frantic": [
+    "down/frantic.wav"
+  ],
+  "down_insects": [
+    "down/insects.wav"
+  ],
+  "down_razor": [
+    "down/razor.wav"
+  ],
+  "down_scrape": [
+    "down/scrape.wav"
+  ],
+  "down_shepard": [
+    "down/shepard.wav"
+  ],
+  "down_snarl": [
+    "down/snarl.wav"
+  ],
+  "down_square": [
+    "down/square.wav"
+  ],
+  "down_static": [
+    "down/static.wav"
+  ],
+  "drums_clicks": [
+    "drums/clicks_170.wav"
+  ],
+  "drums_clicks_tops": [
+    "drums/clicks_170_tops.wav"
+  ],
+  "drums_creaky": [
+    "drums/creaky_170.wav"
+  ],
+  "drums_creaky_tops": [
+    "drums/creaky_170_tops.wav"
+  ],
+  "drums_grind": [
+    "drums/grind_140.wav"
+  ],
+  "drums_grind_tops": [
+    "drums/grind_140_tops.wav"
+  ],
+  "drums_heavy": [
+    "drums/heavy_120.wav"
+  ],
+  "drums_heavy_tops": [
+    "drums/heavy_120_tops.wav"
+  ],
+  "drums_hop": [
+    "drums/hop_100.wav"
+  ],
+  "drums_hop_tops": [
+    "drums/hop_100_tops.wav"
+  ],
+  "drums_house": [
+    "drums/house_120.wav"
+  ],
+  "drums_house_tops": [
+    "drums/house_120_tops.wav"
+  ],
+  "drums_jump": [
+    "drums/jump_140.wav"
+  ],
+  "drums_jump_tops": [
+    "drums/jump_140_tops.wav"
+  ],
+  "drums_loud": [
+    "drums/loud_140.wav"
+  ],
+  "drums_loud_tops": [
+    "drums/loud_140_tops.wav"
+  ],
+  "drums_nod": [
+    "drums/nod_170.wav"
+  ],
+  "drums_nod_tops": [
+    "drums/nod_170_tops.wav"
+  ],
+  "drums_scraps": [
+    "drums/scraps_100.wav"
+  ],
+  "drums_scraps_tops": [
+    "drums/scraps_100_tops.wav"
+  ],
+  "drums_scream": [
+    "drums/scream_140.wav"
+  ],
+  "drums_scream_tops": [
+    "drums/scream_140_tops.wav"
+  ],
+  "drums_snarl": [
+    "drums/snarl_120.wav"
+  ],
+  "drums_snarl_tops": [
+    "drums/snarl_120_tops.wav"
+  ],
+  "drums_spacey": [
+    "drums/spacey_100.wav"
+  ],
+  "drums_spacey_tops": [
+    "drums/spacey_100_tops.wav"
+  ],
+  "drums_squeaky": [
+    "drums/squeaky_120.wav"
+  ],
+  "drums_squeaky_tops": [
+    "drums/squeaky_120_tops.wav"
+  ],
+  "drums_stomp": [
+    "drums/stomp_100.wav"
+  ],
+  "drums_stomp_tops": [
+    "drums/stomp_100_tops.wav"
+  ],
+  "drums_wet": [
+    "drums/wet_170.wav"
+  ],
+  "drums_wet_tops": [
+    "drums/wet_170_tops.wav"
+  ],
+  "eugh": [
+    "vox/eugh_a.wav"
+  ],
+  "extra_arpeggio_down": [
+    "extra/arpeggio_down.wav"
+  ],
+  "extra_arpeggio_up": [
+    "extra/arpeggio_up.wav"
+  ],
+  "extra_bells_high": [
+    "extra/bells_high.wav"
+  ],
+  "extra_bells_low": [
+    "extra/bells_low.wav"
+  ],
+  "extra_crush": [
+    "extra/crush.wav"
+  ],
+  "extra_double_metal": [
+    "extra/double_metal.wav"
+  ],
+  "extra_glass": [
+    "extra/glass_g.wav"
+  ],
+  "extra_harp": [
+    "extra/harp_bb.wav"
+  ],
+  "extra_metal": [
+    "extra/metal.wav"
+  ],
+  "extra_oboe": [
+    "extra/oboe_a.wav"
+  ],
+  "extra_piano_01": [
+    "extra/piano_01_cs.wav"
+  ],
+  "extra_piano_02": [
+    "extra/piano_02_fs.wav"
+  ],
+  "extra_pluck": [
+    "extra/pluck_d.wav"
+  ],
+  "extra_pong": [
+    "extra/pong_cs.wav"
+  ],
+  "extra_trumpet": [
+    "extra/trumpet_g.wav"
+  ],
+  "full": [
+    "vox/full_a.wav"
+  ],
+  "gou": [
+    "vox/gou_g.wav"
+  ],
+  "hah": [
+    "vox/hah.wav"
+  ],
+  "heh": [
+    "vox/heh.wav"
+  ],
+  "hehe": [
+    "vox/hehe_fs.wav"
+  ],
+  "hey": [
+    "vox/hey.wav"
+  ],
+  "hh_clicks": [
+    "hh/clicks.wav"
+  ],
+  "hh_knife": [
+    "hh/knife.wav"
+  ],
+  "hh_lazer": [
+    "hh/lazer.wav"
+  ],
+  "hh_metallic": [
+    "hh/metallic.wav"
+  ],
+  "hh_noisy": [
+    "hh/noisy.wav"
+  ],
+  "hh_ring": [
+    "hh/ring.wav"
+  ],
+  "hh_sharp": [
+    "hh/sharp.wav"
+  ],
+  "hh_squeak": [
+    "hh/squeak.wav"
+  ],
+  "hh_tight": [
+    "hh/tight.wav"
+  ],
+  "hh_wet_clicks": [
+    "hh_wet/clicks.wav"
+  ],
+  "hh_wet_knife": [
+    "hh_wet/knife.wav"
+  ],
+  "hh_wet_lazer": [
+    "hh_wet/lazer.wav"
+  ],
+  "hh_wet_metallic": [
+    "hh_wet/metallic.wav"
+  ],
+  "hh_wet_noisy": [
+    "hh_wet/noisy.wav"
+  ],
+  "hh_wet_ring": [
+    "hh_wet/ring.wav"
+  ],
+  "hh_wet_sharp": [
+    "hh_wet/sharp.wav"
+  ],
+  "hh_wet_squeak": [
+    "hh_wet/squeak.wav"
+  ],
+  "hh_wet_tight": [
+    "hh_wet/tight.wav"
+  ],
+  "hiccup": [
+    "vox/hiccup.wav"
+  ],
+  "high": [
+    "vox/high_a.wav"
+  ],
+  "hih": [
+    "vox/hih.wav"
+  ],
+  "hmph": [
+    "vox/hmph.wav"
+  ],
+  "hoh": [
+    "vox/hoh_b.wav"
+  ],
+  "hooh": [
+    "vox/hooh.wav"
+  ],
+  "huh": [
+    "vox/huh.wav"
+  ],
+  "kick_clappy": [
+    "kick/clappy_g.wav"
+  ],
+  "kick_clicky": [
+    "kick/clicky_c.wav"
+  ],
+  "kick_cute": [
+    "kick/cute_c.wav"
+  ],
+  "kick_long": [
+    "kick/long_c.wav"
+  ],
+  "kick_metallic": [
+    "kick/metallic_c.wav"
+  ],
+  "kick_metallic_drive": [
+    "kick/metallic_drive_c.wav"
+  ],
+  "kick_plucky": [
+    "kick/plucky_c.wav"
+  ],
+  "kick_plucky_drive": [
+    "kick/plucky_drive_c.wav"
+  ],
+  "kick_squelch": [
+    "kick/squelch_c.wav"
+  ],
+  "kick_stomp": [
+    "kick/stomp_c.wav"
+  ],
+  "kick_wet": [
+    "kick/wet_c.wav"
+  ],
+  "kick_wooden": [
+    "kick/wooden_c.wav"
+  ],
+  "kwoh": [
+    "vox/kwoh_g.wav"
+  ],
+  "melody_airy_organ": [
+    "melody/airy_organ_130_amin.wav"
+  ],
+  "melody_cheesy": [
+    "melody/cheesy_115_c.wav"
+  ],
+  "melody_cutesy": [
+    "melody/cutesy_105_amin.wav"
+  ],
+  "melody_gallop": [
+    "melody/gallop_120_bmin.wav"
+  ],
+  "melody_grainy": [
+    "melody/grainy_135_emin.wav"
+  ],
+  "melody_indifferent": [
+    "melody/indifferent_120_amin.wav"
+  ],
+  "melody_intense_arpeggio": [
+    "melody/intense_arpeggio_150_emin.wav"
+  ],
+  "melody_low": [
+    "melody/low_125_f.wav"
+  ],
+  "melody_plucks": [
+    "melody/plucks_140_a.wav"
+  ],
+  "melody_strum": [
+    "melody/strum_90_e.wav"
+  ],
+  "melody_vocal": [
+    "melody/vocal_120_c.wav"
+  ],
+  "owah": [
+    "vox/owah_eb.wav"
+  ],
+  "perc_bounce": [
+    "perc/bounce.wav"
+  ],
+  "perc_bowl": [
+    "perc/bowl.wav"
+  ],
+  "perc_buzzy": [
+    "perc/buzzy.wav"
+  ],
+  "perc_clap": [
+    "perc/clap.wav"
+  ],
+  "perc_coo": [
+    "perc/coo.wav"
+  ],
+  "perc_double": [
+    "perc/double.wav"
+  ],
+  "perc_echo": [
+    "perc/echo.wav"
+  ],
+  "perc_hollow": [
+    "perc/hollow.wav"
+  ],
+  "perc_jitter": [
+    "perc/jitter.wav"
+  ],
+  "perc_lazers": [
+    "perc/lazers.wav"
+  ],
+  "perc_open": [
+    "perc/open.wav"
+  ],
+  "perc_pin": [
+    "perc/pin.wav"
+  ],
+  "perc_pluck": [
+    "perc/pluck.wav"
+  ],
+  "perc_rev": [
+    "perc/rev.wav"
+  ],
+  "perc_ring": [
+    "perc/ring.wav"
+  ],
+  "perc_riser": [
+    "perc/riser.wav"
+  ],
+  "perc_scrape": [
+    "perc/scrape.wav"
+  ],
+  "perc_shaker": [
+    "perc/shaker.wav"
+  ],
+  "perc_smack": [
+    "perc/smack.wav"
+  ],
+  "perc_squeal": [
+    "perc/squeal.wav"
+  ],
+  "perc_static": [
+    "perc/static.wav"
+  ],
+  "perc_step": [
+    "perc/step.wav"
+  ],
+  "perc_stomp": [
+    "perc/stomp.wav"
+  ],
+  "perc_strum": [
+    "perc/strum.wav"
+  ],
+  "perc_sweep": [
+    "perc/sweep.wav"
+  ],
+  "perc_toaster": [
+    "perc/toaster.wav"
+  ],
+  "perc_verb": [
+    "perc/verb.wav"
+  ],
+  "perc_wiggle": [
+    "perc/wiggle.wav"
+  ],
+  "perc_woo": [
+    "perc/woo.wav"
+  ],
+  "perc_wood": [
+    "perc/wood.wav"
+  ],
+  "pluck": [
+    "vox/pluck_g.wav"
+  ],
+  "reverb": [
+    "vox/reverb_f.wav"
+  ],
+  "short": [
+    "vox/short_ab.wav"
+  ],
+  "snare_clap": [
+    "snare/clap.wav"
+  ],
+  "snare_double": [
+    "snare/double.wav"
+  ],
+  "snare_hollow": [
+    "snare/hollow.wav"
+  ],
+  "snare_lazer": [
+    "snare/lazer.wav"
+  ],
+  "snare_pluck": [
+    "snare/pluck.wav"
+  ],
+  "snare_smack": [
+    "snare/smack.wav"
+  ],
+  "snare_snap": [
+    "snare/snap.wav"
+  ],
+  "snare_spring": [
+    "snare/spring.wav"
+  ],
+  "snare_sustained": [
+    "snare/sustained.wav"
+  ],
+  "snare_vocal": [
+    "snare/vocal.wav"
+  ],
+  "snare_wet_clap": [
+    "snare_wet/clap.wav"
+  ],
+  "snare_wet_double": [
+    "snare_wet/double.wav"
+  ],
+  "snare_wet_hollow": [
+    "snare_wet/hollow.wav"
+  ],
+  "snare_wet_lazer": [
+    "snare_wet/lazer.wav"
+  ],
+  "snare_wet_pluck": [
+    "snare_wet/pluck.wav"
+  ],
+  "snare_wet_smack": [
+    "snare_wet/smack.wav"
+  ],
+  "snare_wet_snap": [
+    "snare_wet/snap.wav"
+  ],
+  "snare_wet_spring": [
+    "snare_wet/spring.wav"
+  ],
+  "snare_wet_sustained": [
+    "snare_wet/sustained.wav"
+  ],
+  "snare_wet_vocal": [
+    "snare_wet/vocal.wav"
+  ],
+  "soft": [
+    "vox/soft_f.wav"
+  ],
+  "stutter": [
+    "vox/stutter_eb_f.wav"
+  ],
+  "synth_bubble": [
+    "synth/bubble_c.wav"
+  ],
+  "synth_coin": [
+    "synth/coin_c.wav"
+  ],
+  "synth_dramatic": [
+    "synth/dramatic_c.wav"
+  ],
+  "synth_noisy": [
+    "synth/noisy_c.wav"
+  ],
+  "synth_pluck_bass": [
+    "synth/pluck_bass_fs.wav"
+  ],
+  "synth_ringing": [
+    "synth/ringing_c.wav"
+  ],
+  "synth_riser": [
+    "synth/riser_c.wav"
+  ],
+  "synth_string": [
+    "synth/string_c.wav"
+  ],
+  "synth_sweep": [
+    "synth/sweep_c.wav"
+  ],
+  "synth_wet_bubble": [
+    "synth_wet/bubble_c.wav"
+  ],
+  "synth_wet_coin": [
+    "synth_wet/coin_c.wav"
+  ],
+  "synth_wet_dramatic": [
+    "synth_wet/dramatic_c.wav"
+  ],
+  "synth_wet_noisy": [
+    "synth_wet/noisy_c.wav"
+  ],
+  "synth_wet_pluck_bass": [
+    "synth_wet/pluck_bass_fs.wav"
+  ],
+  "synth_wet_ringing": [
+    "synth_wet/ringing_c.wav"
+  ],
+  "synth_wet_riser": [
+    "synth_wet/riser_c.wav"
+  ],
+  "synth_wet_string": [
+    "synth_wet/string_c.wav"
+  ],
+  "synth_wet_sweep": [
+    "synth_wet/sweep_c.wav"
+  ],
+  "synth_wet_wobble": [
+    "synth_wet/wobble_c.wav"
+  ],
+  "synth_wobble": [
+    "synth/wobble_c.wav"
+  ],
+  "texture_boar": [
+    "texture/boar.wav"
+  ],
+  "texture_crackle": [
+    "texture/crackle.wav"
+  ],
+  "texture_creaky": [
+    "texture/creaky.wav"
+  ],
+  "texture_crying": [
+    "texture/crying.wav"
+  ],
+  "texture_echo": [
+    "texture/echo.wav"
+  ],
+  "texture_glass": [
+    "texture/glass.wav"
+  ],
+  "texture_paper": [
+    "texture/paper.wav"
+  ],
+  "texture_propeller": [
+    "texture/propeller.wav"
+  ],
+  "texture_scattered": [
+    "texture/scattered.wav"
+  ],
+  "texture_scrape": [
+    "texture/scrape.wav"
+  ],
+  "texture_snarling": [
+    "texture/snarling.wav"
+  ],
+  "texture_tin": [
+    "texture/tin.wav"
+  ],
+  "texture_underwater": [
+    "texture/underwater.wav"
+  ],
+  "texture_warehouse": [
+    "texture/warehouse.wav"
+  ],
+  "texture_washy": [
+    "texture/washy.wav"
+  ],
+  "throat": [
+    "vox/throat.wav"
+  ],
+  "up_creatures": [
+    "up/creatures.wav"
+  ],
+  "up_fade": [
+    "up/fade.wav"
+  ],
+  "up_gasping": [
+    "up/gasping.wav"
+  ],
+  "up_hover": [
+    "up/hover.wav"
+  ],
+  "up_itchy": [
+    "up/itchy.wav"
+  ],
+  "up_meow": [
+    "up/meow.wav"
+  ],
+  "up_motor": [
+    "up/motor.wav"
+  ],
+  "up_propeller": [
+    "up/propeller.wav"
+  ],
+  "up_quick": [
+    "up/quick.wav"
+  ],
+  "up_spiky": [
+    "up/spiky.wav"
+  ],
+  "whine": [
+    "vox/whine_cs.wav"
+  ],
+  "whistle": [
+    "vox/whistle.wav"
+  ],
+  "who": [
+    "vox/who_fs.wav"
+  ],
+  "yah": [
+    "vox/yah.wav"
+  ]
+}
