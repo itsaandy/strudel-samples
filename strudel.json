@@ -1,0 +1,925 @@
+{
+  "_base": "https://raw.githubusercontent.com/itsaandy/strudel-samples/main/",
+  "down": [
+    "hyperpop/down/airship.wav",
+    "hyperpop/down/flutter.wav",
+    "hyperpop/down/frantic.wav",
+    "hyperpop/down/insects.wav",
+    "hyperpop/down/razor.wav",
+    "hyperpop/down/scrape.wav",
+    "hyperpop/down/shepard.wav",
+    "hyperpop/down/snarl.wav",
+    "hyperpop/down/square.wav",
+    "hyperpop/down/static.wav"
+  ],
+  "drums": [
+    "hyperpop/drums/clicks_170.wav",
+    "hyperpop/drums/clicks_170_tops.wav",
+    "hyperpop/drums/creaky_170.wav",
+    "hyperpop/drums/creaky_170_tops.wav",
+    "hyperpop/drums/grind_140.wav",
+    "hyperpop/drums/grind_140_tops.wav",
+    "hyperpop/drums/heavy_120.wav",
+    "hyperpop/drums/heavy_120_tops.wav",
+    "hyperpop/drums/hop_100.wav",
+    "hyperpop/drums/hop_100_tops.wav",
+    "hyperpop/drums/house_120.wav",
+    "hyperpop/drums/house_120_tops.wav",
+    "hyperpop/drums/jump_140.wav",
+    "hyperpop/drums/jump_140_tops.wav",
+    "hyperpop/drums/loud_140.wav",
+    "hyperpop/drums/loud_140_tops.wav",
+    "hyperpop/drums/nod_170.wav",
+    "hyperpop/drums/nod_170_tops.wav",
+    "hyperpop/drums/scraps_100.wav",
+    "hyperpop/drums/scraps_100_tops.wav",
+    "hyperpop/drums/scream_140.wav",
+    "hyperpop/drums/scream_140_tops.wav",
+    "hyperpop/drums/snarl_120.wav",
+    "hyperpop/drums/snarl_120_tops.wav",
+    "hyperpop/drums/spacey_100.wav",
+    "hyperpop/drums/spacey_100_tops.wav",
+    "hyperpop/drums/squeaky_120.wav",
+    "hyperpop/drums/squeaky_120_tops.wav",
+    "hyperpop/drums/stomp_100.wav",
+    "hyperpop/drums/stomp_100_tops.wav",
+    "hyperpop/drums/wet_170.wav",
+    "hyperpop/drums/wet_170_tops.wav"
+  ],
+  "extra": [
+    "hyperpop/extra/arpeggio_down.wav",
+    "hyperpop/extra/arpeggio_up.wav",
+    "hyperpop/extra/bells_high.wav",
+    "hyperpop/extra/bells_low.wav",
+    "hyperpop/extra/crush.wav",
+    "hyperpop/extra/double_metal.wav",
+    "hyperpop/extra/glass_g.wav",
+    "hyperpop/extra/harp_bb.wav",
+    "hyperpop/extra/metal.wav",
+    "hyperpop/extra/oboe_a.wav",
+    "hyperpop/extra/piano_01_cs.wav",
+    "hyperpop/extra/piano_02_fs.wav",
+    "hyperpop/extra/pluck_d.wav",
+    "hyperpop/extra/pong_cs.wav",
+    "hyperpop/extra/trumpet_g.wav"
+  ],
+  "hh": [
+    "hyperpop/hh/clicks.wav",
+    "hyperpop/hh/knife.wav",
+    "hyperpop/hh/lazer.wav",
+    "hyperpop/hh/metallic.wav",
+    "hyperpop/hh/noisy.wav",
+    "hyperpop/hh/ring.wav",
+    "hyperpop/hh/sharp.wav",
+    "hyperpop/hh/squeak.wav",
+    "hyperpop/hh/tight.wav"
+  ],
+  "hh_wet": [
+    "hyperpop/hh_wet/clicks.wav",
+    "hyperpop/hh_wet/knife.wav",
+    "hyperpop/hh_wet/lazer.wav",
+    "hyperpop/hh_wet/metallic.wav",
+    "hyperpop/hh_wet/noisy.wav",
+    "hyperpop/hh_wet/ring.wav",
+    "hyperpop/hh_wet/sharp.wav",
+    "hyperpop/hh_wet/squeak.wav",
+    "hyperpop/hh_wet/tight.wav"
+  ],
+  "kick": [
+    "hyperpop/kick/clappy_g.wav",
+    "hyperpop/kick/clicky_c.wav",
+    "hyperpop/kick/cute_c.wav",
+    "hyperpop/kick/long_c.wav",
+    "hyperpop/kick/metallic_c.wav",
+    "hyperpop/kick/metallic_drive_c.wav",
+    "hyperpop/kick/plucky_c.wav",
+    "hyperpop/kick/plucky_drive_c.wav",
+    "hyperpop/kick/squelch_c.wav",
+    "hyperpop/kick/stomp_c.wav",
+    "hyperpop/kick/wet_c.wav",
+    "hyperpop/kick/wooden_c.wav"
+  ],
+  "melody": [
+    "hyperpop/melody/airy_organ_130_amin.wav",
+    "hyperpop/melody/cheesy_115_c.wav",
+    "hyperpop/melody/cutesy_105_amin.wav",
+    "hyperpop/melody/gallop_120_bmin.wav",
+    "hyperpop/melody/grainy_135_emin.wav",
+    "hyperpop/melody/indifferent_120_amin.wav",
+    "hyperpop/melody/intense_arpeggio_150_emin.wav",
+    "hyperpop/melody/low_125_f.wav",
+    "hyperpop/melody/plucks_140_a.wav",
+    "hyperpop/melody/strum_90_e.wav",
+    "hyperpop/melody/vocal_120_c.wav"
+  ],
+  "perc": [
+    "hyperpop/perc/bounce.wav",
+    "hyperpop/perc/bowl.wav",
+    "hyperpop/perc/buzzy.wav",
+    "hyperpop/perc/clap.wav",
+    "hyperpop/perc/coo.wav",
+    "hyperpop/perc/double.wav",
+    "hyperpop/perc/echo.wav",
+    "hyperpop/perc/hollow.wav",
+    "hyperpop/perc/jitter.wav",
+    "hyperpop/perc/lazers.wav",
+    "hyperpop/perc/open.wav",
+    "hyperpop/perc/pin.wav",
+    "hyperpop/perc/pluck.wav",
+    "hyperpop/perc/rev.wav",
+    "hyperpop/perc/ring.wav",
+    "hyperpop/perc/riser.wav",
+    "hyperpop/perc/scrape.wav",
+    "hyperpop/perc/shaker.wav",
+    "hyperpop/perc/smack.wav",
+    "hyperpop/perc/squeal.wav",
+    "hyperpop/perc/static.wav",
+    "hyperpop/perc/step.wav",
+    "hyperpop/perc/stomp.wav",
+    "hyperpop/perc/strum.wav",
+    "hyperpop/perc/sweep.wav",
+    "hyperpop/perc/toaster.wav",
+    "hyperpop/perc/verb.wav",
+    "hyperpop/perc/wiggle.wav",
+    "hyperpop/perc/woo.wav",
+    "hyperpop/perc/wood.wav"
+  ],
+  "snare": [
+    "hyperpop/snare/clap.wav",
+    "hyperpop/snare/double.wav",
+    "hyperpop/snare/hollow.wav",
+    "hyperpop/snare/lazer.wav",
+    "hyperpop/snare/pluck.wav",
+    "hyperpop/snare/smack.wav",
+    "hyperpop/snare/snap.wav",
+    "hyperpop/snare/spring.wav",
+    "hyperpop/snare/sustained.wav",
+    "hyperpop/snare/vocal.wav"
+  ],
+  "snare_wet": [
+    "hyperpop/snare_wet/clap.wav",
+    "hyperpop/snare_wet/double.wav",
+    "hyperpop/snare_wet/hollow.wav",
+    "hyperpop/snare_wet/lazer.wav",
+    "hyperpop/snare_wet/pluck.wav",
+    "hyperpop/snare_wet/smack.wav",
+    "hyperpop/snare_wet/snap.wav",
+    "hyperpop/snare_wet/spring.wav",
+    "hyperpop/snare_wet/sustained.wav",
+    "hyperpop/snare_wet/vocal.wav"
+  ],
+  "synth": [
+    "hyperpop/synth/bubble_c.wav",
+    "hyperpop/synth/coin_c.wav",
+    "hyperpop/synth/dramatic_c.wav",
+    "hyperpop/synth/noisy_c.wav",
+    "hyperpop/synth/pluck_bass_fs.wav",
+    "hyperpop/synth/ringing_c.wav",
+    "hyperpop/synth/riser_c.wav",
+    "hyperpop/synth/string_c.wav",
+    "hyperpop/synth/sweep_c.wav",
+    "hyperpop/synth/wobble_c.wav"
+  ],
+  "synth_wet": [
+    "hyperpop/synth_wet/bubble_c.wav",
+    "hyperpop/synth_wet/coin_c.wav",
+    "hyperpop/synth_wet/dramatic_c.wav",
+    "hyperpop/synth_wet/noisy_c.wav",
+    "hyperpop/synth_wet/pluck_bass_fs.wav",
+    "hyperpop/synth_wet/ringing_c.wav",
+    "hyperpop/synth_wet/riser_c.wav",
+    "hyperpop/synth_wet/string_c.wav",
+    "hyperpop/synth_wet/sweep_c.wav",
+    "hyperpop/synth_wet/wobble_c.wav"
+  ],
+  "texture": [
+    "hyperpop/texture/boar.wav",
+    "hyperpop/texture/crackle.wav",
+    "hyperpop/texture/creaky.wav",
+    "hyperpop/texture/crying.wav",
+    "hyperpop/texture/echo.wav",
+    "hyperpop/texture/glass.wav",
+    "hyperpop/texture/paper.wav",
+    "hyperpop/texture/propeller.wav",
+    "hyperpop/texture/scattered.wav",
+    "hyperpop/texture/scrape.wav",
+    "hyperpop/texture/snarling.wav",
+    "hyperpop/texture/tin.wav",
+    "hyperpop/texture/underwater.wav",
+    "hyperpop/texture/warehouse.wav",
+    "hyperpop/texture/washy.wav"
+  ],
+  "up": [
+    "hyperpop/up/creatures.wav",
+    "hyperpop/up/fade.wav",
+    "hyperpop/up/gasping.wav",
+    "hyperpop/up/hover.wav",
+    "hyperpop/up/itchy.wav",
+    "hyperpop/up/meow.wav",
+    "hyperpop/up/motor.wav",
+    "hyperpop/up/propeller.wav",
+    "hyperpop/up/quick.wav",
+    "hyperpop/up/spiky.wav"
+  ],
+  "vox": [
+    "hyperpop/vox/airy_a.wav",
+    "hyperpop/vox/bwoh_g.wav",
+    "hyperpop/vox/cough_eb.wav",
+    "hyperpop/vox/distorted.wav",
+    "hyperpop/vox/eugh_a.wav",
+    "hyperpop/vox/full_a.wav",
+    "hyperpop/vox/gou_g.wav",
+    "hyperpop/vox/hah.wav",
+    "hyperpop/vox/heh.wav",
+    "hyperpop/vox/hehe_fs.wav",
+    "hyperpop/vox/hey.wav",
+    "hyperpop/vox/hiccup.wav",
+    "hyperpop/vox/high_a.wav",
+    "hyperpop/vox/hih.wav",
+    "hyperpop/vox/hmph.wav",
+    "hyperpop/vox/hoh_b.wav",
+    "hyperpop/vox/hooh.wav",
+    "hyperpop/vox/huh.wav",
+    "hyperpop/vox/kwoh_g.wav",
+    "hyperpop/vox/owah_eb.wav",
+    "hyperpop/vox/pluck_g.wav",
+    "hyperpop/vox/reverb_f.wav",
+    "hyperpop/vox/short_ab.wav",
+    "hyperpop/vox/soft_f.wav",
+    "hyperpop/vox/stutter_eb_f.wav",
+    "hyperpop/vox/throat.wav",
+    "hyperpop/vox/whine_cs.wav",
+    "hyperpop/vox/whistle.wav",
+    "hyperpop/vox/who_fs.wav",
+    "hyperpop/vox/yah.wav"
+  ],
+  "airy": [
+    "hyperpop/vox/airy_a.wav"
+  ],
+  "bwoh": [
+    "hyperpop/vox/bwoh_g.wav"
+  ],
+  "cough": [
+    "hyperpop/vox/cough_eb.wav"
+  ],
+  "distorted": [
+    "hyperpop/vox/distorted.wav"
+  ],
+  "down_airship": [
+    "hyperpop/down/airship.wav"
+  ],
+  "down_flutter": [
+    "hyperpop/down/flutter.wav"
+  ],
+  "down_frantic": [
+    "hyperpop/down/frantic.wav"
+  ],
+  "down_insects": [
+    "hyperpop/down/insects.wav"
+  ],
+  "down_razor": [
+    "hyperpop/down/razor.wav"
+  ],
+  "down_scrape": [
+    "hyperpop/down/scrape.wav"
+  ],
+  "down_shepard": [
+    "hyperpop/down/shepard.wav"
+  ],
+  "down_snarl": [
+    "hyperpop/down/snarl.wav"
+  ],
+  "down_square": [
+    "hyperpop/down/square.wav"
+  ],
+  "down_static": [
+    "hyperpop/down/static.wav"
+  ],
+  "drums_clicks": [
+    "hyperpop/drums/clicks_170.wav"
+  ],
+  "drums_clicks_tops": [
+    "hyperpop/drums/clicks_170_tops.wav"
+  ],
+  "drums_creaky": [
+    "hyperpop/drums/creaky_170.wav"
+  ],
+  "drums_creaky_tops": [
+    "hyperpop/drums/creaky_170_tops.wav"
+  ],
+  "drums_grind": [
+    "hyperpop/drums/grind_140.wav"
+  ],
+  "drums_grind_tops": [
+    "hyperpop/drums/grind_140_tops.wav"
+  ],
+  "drums_heavy": [
+    "hyperpop/drums/heavy_120.wav"
+  ],
+  "drums_heavy_tops": [
+    "hyperpop/drums/heavy_120_tops.wav"
+  ],
+  "drums_hop": [
+    "hyperpop/drums/hop_100.wav"
+  ],
+  "drums_hop_tops": [
+    "hyperpop/drums/hop_100_tops.wav"
+  ],
+  "drums_house": [
+    "hyperpop/drums/house_120.wav"
+  ],
+  "drums_house_tops": [
+    "hyperpop/drums/house_120_tops.wav"
+  ],
+  "drums_jump": [
+    "hyperpop/drums/jump_140.wav"
+  ],
+  "drums_jump_tops": [
+    "hyperpop/drums/jump_140_tops.wav"
+  ],
+  "drums_loud": [
+    "hyperpop/drums/loud_140.wav"
+  ],
+  "drums_loud_tops": [
+    "hyperpop/drums/loud_140_tops.wav"
+  ],
+  "drums_nod": [
+    "hyperpop/drums/nod_170.wav"
+  ],
+  "drums_nod_tops": [
+    "hyperpop/drums/nod_170_tops.wav"
+  ],
+  "drums_scraps": [
+    "hyperpop/drums/scraps_100.wav"
+  ],
+  "drums_scraps_tops": [
+    "hyperpop/drums/scraps_100_tops.wav"
+  ],
+  "drums_scream": [
+    "hyperpop/drums/scream_140.wav"
+  ],
+  "drums_scream_tops": [
+    "hyperpop/drums/scream_140_tops.wav"
+  ],
+  "drums_snarl": [
+    "hyperpop/drums/snarl_120.wav"
+  ],
+  "drums_snarl_tops": [
+    "hyperpop/drums/snarl_120_tops.wav"
+  ],
+  "drums_spacey": [
+    "hyperpop/drums/spacey_100.wav"
+  ],
+  "drums_spacey_tops": [
+    "hyperpop/drums/spacey_100_tops.wav"
+  ],
+  "drums_squeaky": [
+    "hyperpop/drums/squeaky_120.wav"
+  ],
+  "drums_squeaky_tops": [
+    "hyperpop/drums/squeaky_120_tops.wav"
+  ],
+  "drums_stomp": [
+    "hyperpop/drums/stomp_100.wav"
+  ],
+  "drums_stomp_tops": [
+    "hyperpop/drums/stomp_100_tops.wav"
+  ],
+  "drums_wet": [
+    "hyperpop/drums/wet_170.wav"
+  ],
+  "drums_wet_tops": [
+    "hyperpop/drums/wet_170_tops.wav"
+  ],
+  "eugh": [
+    "hyperpop/vox/eugh_a.wav"
+  ],
+  "extra_arpeggio_down": [
+    "hyperpop/extra/arpeggio_down.wav"
+  ],
+  "extra_arpeggio_up": [
+    "hyperpop/extra/arpeggio_up.wav"
+  ],
+  "extra_bells_high": [
+    "hyperpop/extra/bells_high.wav"
+  ],
+  "extra_bells_low": [
+    "hyperpop/extra/bells_low.wav"
+  ],
+  "extra_crush": [
+    "hyperpop/extra/crush.wav"
+  ],
+  "extra_double_metal": [
+    "hyperpop/extra/double_metal.wav"
+  ],
+  "extra_glass": [
+    "hyperpop/extra/glass_g.wav"
+  ],
+  "extra_harp": [
+    "hyperpop/extra/harp_bb.wav"
+  ],
+  "extra_metal": [
+    "hyperpop/extra/metal.wav"
+  ],
+  "extra_oboe": [
+    "hyperpop/extra/oboe_a.wav"
+  ],
+  "extra_piano_01": [
+    "hyperpop/extra/piano_01_cs.wav"
+  ],
+  "extra_piano_02": [
+    "hyperpop/extra/piano_02_fs.wav"
+  ],
+  "extra_pluck": [
+    "hyperpop/extra/pluck_d.wav"
+  ],
+  "extra_pong": [
+    "hyperpop/extra/pong_cs.wav"
+  ],
+  "extra_trumpet": [
+    "hyperpop/extra/trumpet_g.wav"
+  ],
+  "full": [
+    "hyperpop/vox/full_a.wav"
+  ],
+  "gou": [
+    "hyperpop/vox/gou_g.wav"
+  ],
+  "hah": [
+    "hyperpop/vox/hah.wav"
+  ],
+  "heh": [
+    "hyperpop/vox/heh.wav"
+  ],
+  "hehe": [
+    "hyperpop/vox/hehe_fs.wav"
+  ],
+  "hey": [
+    "hyperpop/vox/hey.wav"
+  ],
+  "hh_clicks": [
+    "hyperpop/hh/clicks.wav"
+  ],
+  "hh_knife": [
+    "hyperpop/hh/knife.wav"
+  ],
+  "hh_lazer": [
+    "hyperpop/hh/lazer.wav"
+  ],
+  "hh_metallic": [
+    "hyperpop/hh/metallic.wav"
+  ],
+  "hh_noisy": [
+    "hyperpop/hh/noisy.wav"
+  ],
+  "hh_ring": [
+    "hyperpop/hh/ring.wav"
+  ],
+  "hh_sharp": [
+    "hyperpop/hh/sharp.wav"
+  ],
+  "hh_squeak": [
+    "hyperpop/hh/squeak.wav"
+  ],
+  "hh_tight": [
+    "hyperpop/hh/tight.wav"
+  ],
+  "hh_wet_clicks": [
+    "hyperpop/hh_wet/clicks.wav"
+  ],
+  "hh_wet_knife": [
+    "hyperpop/hh_wet/knife.wav"
+  ],
+  "hh_wet_lazer": [
+    "hyperpop/hh_wet/lazer.wav"
+  ],
+  "hh_wet_metallic": [
+    "hyperpop/hh_wet/metallic.wav"
+  ],
+  "hh_wet_noisy": [
+    "hyperpop/hh_wet/noisy.wav"
+  ],
+  "hh_wet_ring": [
+    "hyperpop/hh_wet/ring.wav"
+  ],
+  "hh_wet_sharp": [
+    "hyperpop/hh_wet/sharp.wav"
+  ],
+  "hh_wet_squeak": [
+    "hyperpop/hh_wet/squeak.wav"
+  ],
+  "hh_wet_tight": [
+    "hyperpop/hh_wet/tight.wav"
+  ],
+  "hiccup": [
+    "hyperpop/vox/hiccup.wav"
+  ],
+  "high": [
+    "hyperpop/vox/high_a.wav"
+  ],
+  "hih": [
+    "hyperpop/vox/hih.wav"
+  ],
+  "hmph": [
+    "hyperpop/vox/hmph.wav"
+  ],
+  "hoh": [
+    "hyperpop/vox/hoh_b.wav"
+  ],
+  "hooh": [
+    "hyperpop/vox/hooh.wav"
+  ],
+  "huh": [
+    "hyperpop/vox/huh.wav"
+  ],
+  "kick_clappy": [
+    "hyperpop/kick/clappy_g.wav"
+  ],
+  "kick_clicky": [
+    "hyperpop/kick/clicky_c.wav"
+  ],
+  "kick_cute": [
+    "hyperpop/kick/cute_c.wav"
+  ],
+  "kick_long": [
+    "hyperpop/kick/long_c.wav"
+  ],
+  "kick_metallic": [
+    "hyperpop/kick/metallic_c.wav"
+  ],
+  "kick_metallic_drive": [
+    "hyperpop/kick/metallic_drive_c.wav"
+  ],
+  "kick_plucky": [
+    "hyperpop/kick/plucky_c.wav"
+  ],
+  "kick_plucky_drive": [
+    "hyperpop/kick/plucky_drive_c.wav"
+  ],
+  "kick_squelch": [
+    "hyperpop/kick/squelch_c.wav"
+  ],
+  "kick_stomp": [
+    "hyperpop/kick/stomp_c.wav"
+  ],
+  "kick_wet": [
+    "hyperpop/kick/wet_c.wav"
+  ],
+  "kick_wooden": [
+    "hyperpop/kick/wooden_c.wav"
+  ],
+  "kwoh": [
+    "hyperpop/vox/kwoh_g.wav"
+  ],
+  "melody_airy_organ": [
+    "hyperpop/melody/airy_organ_130_amin.wav"
+  ],
+  "melody_cheesy": [
+    "hyperpop/melody/cheesy_115_c.wav"
+  ],
+  "melody_cutesy": [
+    "hyperpop/melody/cutesy_105_amin.wav"
+  ],
+  "melody_gallop": [
+    "hyperpop/melody/gallop_120_bmin.wav"
+  ],
+  "melody_grainy": [
+    "hyperpop/melody/grainy_135_emin.wav"
+  ],
+  "melody_indifferent": [
+    "hyperpop/melody/indifferent_120_amin.wav"
+  ],
+  "melody_intense_arpeggio": [
+    "hyperpop/melody/intense_arpeggio_150_emin.wav"
+  ],
+  "melody_low": [
+    "hyperpop/melody/low_125_f.wav"
+  ],
+  "melody_plucks": [
+    "hyperpop/melody/plucks_140_a.wav"
+  ],
+  "melody_strum": [
+    "hyperpop/melody/strum_90_e.wav"
+  ],
+  "melody_vocal": [
+    "hyperpop/melody/vocal_120_c.wav"
+  ],
+  "owah": [
+    "hyperpop/vox/owah_eb.wav"
+  ],
+  "perc_bounce": [
+    "hyperpop/perc/bounce.wav"
+  ],
+  "perc_bowl": [
+    "hyperpop/perc/bowl.wav"
+  ],
+  "perc_buzzy": [
+    "hyperpop/perc/buzzy.wav"
+  ],
+  "perc_clap": [
+    "hyperpop/perc/clap.wav"
+  ],
+  "perc_coo": [
+    "hyperpop/perc/coo.wav"
+  ],
+  "perc_double": [
+    "hyperpop/perc/double.wav"
+  ],
+  "perc_echo": [
+    "hyperpop/perc/echo.wav"
+  ],
+  "perc_hollow": [
+    "hyperpop/perc/hollow.wav"
+  ],
+  "perc_jitter": [
+    "hyperpop/perc/jitter.wav"
+  ],
+  "perc_lazers": [
+    "hyperpop/perc/lazers.wav"
+  ],
+  "perc_open": [
+    "hyperpop/perc/open.wav"
+  ],
+  "perc_pin": [
+    "hyperpop/perc/pin.wav"
+  ],
+  "perc_pluck": [
+    "hyperpop/perc/pluck.wav"
+  ],
+  "perc_rev": [
+    "hyperpop/perc/rev.wav"
+  ],
+  "perc_ring": [
+    "hyperpop/perc/ring.wav"
+  ],
+  "perc_riser": [
+    "hyperpop/perc/riser.wav"
+  ],
+  "perc_scrape": [
+    "hyperpop/perc/scrape.wav"
+  ],
+  "perc_shaker": [
+    "hyperpop/perc/shaker.wav"
+  ],
+  "perc_smack": [
+    "hyperpop/perc/smack.wav"
+  ],
+  "perc_squeal": [
+    "hyperpop/perc/squeal.wav"
+  ],
+  "perc_static": [
+    "hyperpop/perc/static.wav"
+  ],
+  "perc_step": [
+    "hyperpop/perc/step.wav"
+  ],
+  "perc_stomp": [
+    "hyperpop/perc/stomp.wav"
+  ],
+  "perc_strum": [
+    "hyperpop/perc/strum.wav"
+  ],
+  "perc_sweep": [
+    "hyperpop/perc/sweep.wav"
+  ],
+  "perc_toaster": [
+    "hyperpop/perc/toaster.wav"
+  ],
+  "perc_verb": [
+    "hyperpop/perc/verb.wav"
+  ],
+  "perc_wiggle": [
+    "hyperpop/perc/wiggle.wav"
+  ],
+  "perc_woo": [
+    "hyperpop/perc/woo.wav"
+  ],
+  "perc_wood": [
+    "hyperpop/perc/wood.wav"
+  ],
+  "pluck": [
+    "hyperpop/vox/pluck_g.wav"
+  ],
+  "reverb": [
+    "hyperpop/vox/reverb_f.wav"
+  ],
+  "short": [
+    "hyperpop/vox/short_ab.wav"
+  ],
+  "snare_clap": [
+    "hyperpop/snare/clap.wav"
+  ],
+  "snare_double": [
+    "hyperpop/snare/double.wav"
+  ],
+  "snare_hollow": [
+    "hyperpop/snare/hollow.wav"
+  ],
+  "snare_lazer": [
+    "hyperpop/snare/lazer.wav"
+  ],
+  "snare_pluck": [
+    "hyperpop/snare/pluck.wav"
+  ],
+  "snare_smack": [
+    "hyperpop/snare/smack.wav"
+  ],
+  "snare_snap": [
+    "hyperpop/snare/snap.wav"
+  ],
+  "snare_spring": [
+    "hyperpop/snare/spring.wav"
+  ],
+  "snare_sustained": [
+    "hyperpop/snare/sustained.wav"
+  ],
+  "snare_vocal": [
+    "hyperpop/snare/vocal.wav"
+  ],
+  "snare_wet_clap": [
+    "hyperpop/snare_wet/clap.wav"
+  ],
+  "snare_wet_double": [
+    "hyperpop/snare_wet/double.wav"
+  ],
+  "snare_wet_hollow": [
+    "hyperpop/snare_wet/hollow.wav"
+  ],
+  "snare_wet_lazer": [
+    "hyperpop/snare_wet/lazer.wav"
+  ],
+  "snare_wet_pluck": [
+    "hyperpop/snare_wet/pluck.wav"
+  ],
+  "snare_wet_smack": [
+    "hyperpop/snare_wet/smack.wav"
+  ],
+  "snare_wet_snap": [
+    "hyperpop/snare_wet/snap.wav"
+  ],
+  "snare_wet_spring": [
+    "hyperpop/snare_wet/spring.wav"
+  ],
+  "snare_wet_sustained": [
+    "hyperpop/snare_wet/sustained.wav"
+  ],
+  "snare_wet_vocal": [
+    "hyperpop/snare_wet/vocal.wav"
+  ],
+  "soft": [
+    "hyperpop/vox/soft_f.wav"
+  ],
+  "stutter": [
+    "hyperpop/vox/stutter_eb_f.wav"
+  ],
+  "synth_bubble": [
+    "hyperpop/synth/bubble_c.wav"
+  ],
+  "synth_coin": [
+    "hyperpop/synth/coin_c.wav"
+  ],
+  "synth_dramatic": [
+    "hyperpop/synth/dramatic_c.wav"
+  ],
+  "synth_noisy": [
+    "hyperpop/synth/noisy_c.wav"
+  ],
+  "synth_pluck_bass": [
+    "hyperpop/synth/pluck_bass_fs.wav"
+  ],
+  "synth_ringing": [
+    "hyperpop/synth/ringing_c.wav"
+  ],
+  "synth_riser": [
+    "hyperpop/synth/riser_c.wav"
+  ],
+  "synth_string": [
+    "hyperpop/synth/string_c.wav"
+  ],
+  "synth_sweep": [
+    "hyperpop/synth/sweep_c.wav"
+  ],
+  "synth_wet_bubble": [
+    "hyperpop/synth_wet/bubble_c.wav"
+  ],
+  "synth_wet_coin": [
+    "hyperpop/synth_wet/coin_c.wav"
+  ],
+  "synth_wet_dramatic": [
+    "hyperpop/synth_wet/dramatic_c.wav"
+  ],
+  "synth_wet_noisy": [
+    "hyperpop/synth_wet/noisy_c.wav"
+  ],
+  "synth_wet_pluck_bass": [
+    "hyperpop/synth_wet/pluck_bass_fs.wav"
+  ],
+  "synth_wet_ringing": [
+    "hyperpop/synth_wet/ringing_c.wav"
+  ],
+  "synth_wet_riser": [
+    "hyperpop/synth_wet/riser_c.wav"
+  ],
+  "synth_wet_string": [
+    "hyperpop/synth_wet/string_c.wav"
+  ],
+  "synth_wet_sweep": [
+    "hyperpop/synth_wet/sweep_c.wav"
+  ],
+  "synth_wet_wobble": [
+    "hyperpop/synth_wet/wobble_c.wav"
+  ],
+  "synth_wobble": [
+    "hyperpop/synth/wobble_c.wav"
+  ],
+  "texture_boar": [
+    "hyperpop/texture/boar.wav"
+  ],
+  "texture_crackle": [
+    "hyperpop/texture/crackle.wav"
+  ],
+  "texture_creaky": [
+    "hyperpop/texture/creaky.wav"
+  ],
+  "texture_crying": [
+    "hyperpop/texture/crying.wav"
+  ],
+  "texture_echo": [
+    "hyperpop/texture/echo.wav"
+  ],
+  "texture_glass": [
+    "hyperpop/texture/glass.wav"
+  ],
+  "texture_paper": [
+    "hyperpop/texture/paper.wav"
+  ],
+  "texture_propeller": [
+    "hyperpop/texture/propeller.wav"
+  ],
+  "texture_scattered": [
+    "hyperpop/texture/scattered.wav"
+  ],
+  "texture_scrape": [
+    "hyperpop/texture/scrape.wav"
+  ],
+  "texture_snarling": [
+    "hyperpop/texture/snarling.wav"
+  ],
+  "texture_tin": [
+    "hyperpop/texture/tin.wav"
+  ],
+  "texture_underwater": [
+    "hyperpop/texture/underwater.wav"
+  ],
+  "texture_warehouse": [
+    "hyperpop/texture/warehouse.wav"
+  ],
+  "texture_washy": [
+    "hyperpop/texture/washy.wav"
+  ],
+  "throat": [
+    "hyperpop/vox/throat.wav"
+  ],
+  "up_creatures": [
+    "hyperpop/up/creatures.wav"
+  ],
+  "up_fade": [
+    "hyperpop/up/fade.wav"
+  ],
+  "up_gasping": [
+    "hyperpop/up/gasping.wav"
+  ],
+  "up_hover": [
+    "hyperpop/up/hover.wav"
+  ],
+  "up_itchy": [
+    "hyperpop/up/itchy.wav"
+  ],
+  "up_meow": [
+    "hyperpop/up/meow.wav"
+  ],
+  "up_motor": [
+    "hyperpop/up/motor.wav"
+  ],
+  "up_propeller": [
+    "hyperpop/up/propeller.wav"
+  ],
+  "up_quick": [
+    "hyperpop/up/quick.wav"
+  ],
+  "up_spiky": [
+    "hyperpop/up/spiky.wav"
+  ],
+  "whine": [
+    "hyperpop/vox/whine_cs.wav"
+  ],
+  "whistle": [
+    "hyperpop/vox/whistle.wav"
+  ],
+  "who": [
+    "hyperpop/vox/who_fs.wav"
+  ],
+  "yah": [
+    "hyperpop/vox/yah.wav"
+  ]
+}
