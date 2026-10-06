@@ -79,14 +79,15 @@ Strudel; when multiple packs define the same name, load order matters.
 
 Named loops carry a `_<tempo>bpm` suffix, e.g. `drums_hop_100bpm` (Hyperpop)
 and `drums_vibez_135bpm` (UKG). Tempo-tagged UKG fills follow the same convention.
-The combined map uses `ukg_drums_vibez_135bpm`. Older names remain aliases to the
-same files, so existing patterns and group indices keep working. Autocomplete
-will show both names after refreshing its sample maps.
+The combined map uses `ukg_drums_vibez_135bpm`. Old tempo-less loop aliases have
+been removed at the user's request. Use BPM-suffixed names in saved patterns.
+Group indices are unchanged. Reload Strudel to clear old runtime registrations,
+then run the sample-loading calls again; autocomplete will show only current names.
 
 For future agents: retain source BPM in playable loop names as well as filenames.
 Use catalog/source metadata; do not guess missing tempos. Keep `sound` as the
-recommended name, `legacy_sound` as its previous alias, and `bpm` as source tempo.
-Do not remove existing aliases or reorder group arrays when adding metadata.
+playable name and `bpm` as source tempo. Do not reintroduce the removed tempo-less
+loop aliases. Keep group arrays in their existing order.
 
 ### Add or update a pack
 

@@ -15,8 +15,8 @@ stack(
 
 
 Named loops include their source tempo, e.g. `bass_loop_classic_reese_135bpm`.
-Original short names remain compatibility aliases; group indices and audio are unchanged.
-The CSV `sound` column lists the recommended name and `legacy_sound` records its older alias.
+Old tempo-less loop aliases have been removed. Use the BPM-suffixed names; group indices and audio are unchanged.
+The CSV `sound` column lists the playable name. Reload Strudel to clear previously registered old names.
 BPM labels come from source metadata, not audio estimation; fills without source BPM remain untagged.
 
 ## Organization
