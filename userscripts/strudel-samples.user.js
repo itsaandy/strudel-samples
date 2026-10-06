@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Strudel Sample Autocomplete
 // @namespace    itsaandy/strudel-samples
-// @version      0.2.0
+// @version      0.3.0
 // @description  Complete your GitHub sample names inside s() and sound() strings.
 // @match        https://strudel.cc/*
 // @run-at       document-idle
@@ -61,7 +61,21 @@
       const url = mapURL(tokens[i+2].text);
       if (url) urls.add(url);
     }
-    return [...urls].sort();
+    return [...urls];
+  }
+  function previewURL(value, map, manifestURL) {
+    // Preview the first variation, or first pitch-zone sample, at original pitch.
+    while (value && typeof value === 'object') value = Object.values(value)[0];
+    if (typeof value !== 'string') return null;
+    let base = map._base || new URL('.', manifestURL).href;
+    if (typeof base !== 'string') return null;
+    if (base.startsWith('github:')) base = mapURL(base)?.replace(/strudel\.json$/, '');
+    if (!base) return null;
+    try {
+      base = new URL(base, manifestURL).href;
+      const url = new URL(value, base.endsWith('/') ? base : base + '/');
+      return url.protocol === 'https:' ? url.href : null;
+    } catch { return null; }
   }
   // END MAP DISCOVERY
 
@@ -74,7 +88,7 @@
     mapSignature = signature;
     activeMaps = urls;
     generation++; // Ignore any responses belonging to the previous source set.
-    names = []; last = ''; hide();
+    names = []; soundURLs = new Map(); last = ''; hide();
     clearTimeout(refreshTimer);
     status = urls.length ? 'Loading referenced sample maps…' : 'No literal samples() map references';
     refreshTimer = setTimeout(() => refresh(), 400);
@@ -83,6 +97,7 @@
   let names = [], items = [], selected = 0, current = null, last = '', dismissed = '';
   let destroyed = false, status = 'Loading sample names…';
   const controller = new AbortController();
+  let soundURLs = new Map();
   const popup = document.createElement('div');
   popup.id = 'strudel-sample-autocomplete';
   popup.className = 'cm-tooltip cm-tooltip-autocomplete cm-tooltip-below';
@@ -121,6 +136,93 @@
   `;
   document.head.append(style);
 
+  // BEGIN AUDIO PREVIEW
+  const PREVIEW_DELAY_MS = 150, PREVIEW_SECONDS = 3, PREVIEW_GAIN = 0.25;
+  const BUFFER_LIMIT = 32 * 1024 * 1024;
+  const audioCache = new Map();
+  let audioBytes = 0, audioContext, previewTimer, previewRequest, previewSource;
+  let previewGeneration = 0, previewStatus = 'idle';
+
+  function stopPreview() {
+    previewGeneration++;
+    clearTimeout(previewTimer);
+    previewRequest?.abort(); previewRequest = null;
+    if (previewSource) {
+      const source = previewSource; previewSource = null;
+      try { source.stop(); } catch { /* already ended */ }
+      source.disconnect();
+    }
+    previewStatus = 'idle';
+  }
+
+  function schedulePreview() {
+    stopPreview();
+    const name = items[selected], url = soundURLs.get(name);
+    if (!current || !url || destroyed) return;
+    const request = previewGeneration;
+    // Called directly from a trusted key/click so autoplay can be unlocked.
+    try {
+      audioContext ||= new (window.AudioContext || window.webkitAudioContext)();
+      const ready = audioContext.resume();
+      ready.catch(() => {}); // handled below after the debounce
+      previewStatus = 'pending: ' + name;
+      previewTimer = setTimeout(async () => {
+        const valid = () => request === previewGeneration && !destroyed &&
+          current && items[selected] === name && editor()?.hasFocus;
+        try {
+          await ready;
+          if (!valid()) return;
+          if (audioContext.state !== 'running') throw new Error('Audio is suspended; press an arrow key again');
+          previewStatus = 'loading: ' + name;
+          let buffer = audioCache.get(url);
+          if (buffer) { audioCache.delete(url); audioCache.set(url, buffer); }
+          else {
+            const abort = new AbortController(); previewRequest = abort;
+            const response = await fetch(url, { signal: abort.signal });
+            if (!response.ok) throw new Error('Audio HTTP ' + response.status);
+            const data = await response.arrayBuffer();
+            if (!valid()) return;
+            buffer = await audioContext.decodeAudioData(data);
+            if (!valid()) return;
+            const bytes = buffer.length * buffer.numberOfChannels * 4;
+            while (audioCache.size && (audioBytes + bytes > BUFFER_LIMIT || audioCache.size >= 24)) {
+              const oldest = audioCache.keys().next().value, old = audioCache.get(oldest);
+              audioBytes -= old.length * old.numberOfChannels * 4; audioCache.delete(oldest);
+            }
+            if (bytes <= BUFFER_LIMIT) { audioCache.set(url, buffer); audioBytes += bytes; }
+          }
+          if (!valid()) return;
+          previewRequest = null;
+          const source = audioContext.createBufferSource(), gain = audioContext.createGain();
+          const now = audioContext.currentTime, duration = Math.min(buffer.duration, PREVIEW_SECONDS);
+          const fade = Math.min(0.015, duration / 4);
+          source.buffer = buffer;
+          gain.gain.setValueAtTime(0, now);
+          gain.gain.linearRampToValueAtTime(PREVIEW_GAIN, now + Math.min(0.002, fade));
+          gain.gain.setValueAtTime(PREVIEW_GAIN, now + duration - fade);
+          gain.gain.linearRampToValueAtTime(0, now + duration);
+          source.connect(gain); gain.connect(audioContext.destination);
+          previewSource = source;
+          source.onended = () => {
+            source.disconnect(); gain.disconnect();
+            if (previewSource === source) { previewSource = null; previewStatus = 'idle'; }
+          };
+          source.start(now, 0, duration);
+          previewStatus = 'playing: ' + name;
+        } catch (error) {
+          if (!valid() || error.name === 'AbortError') return;
+          previewStatus = 'unavailable: ' + name;
+          const row = list.children[selected];
+          if (row) row.title = 'Preview unavailable: ' + error.message;
+          console.warn('[Sample autocomplete preview]', name, error);
+        }
+      }, PREVIEW_DELAY_MS);
+    } catch (error) {
+      previewStatus = 'unavailable: ' + name;
+      console.warn('[Sample autocomplete preview]', error);
+    }
+  }
+  // END AUDIO PREVIEW
 
   function editor() {
     const view = window.strudelMirror?.editor;
@@ -160,7 +262,7 @@
       stamp: text + '\u0000' + pos };
   }
 
-  function hide() { popup.style.display = 'none'; current = null; items = []; }
+  function hide() { stopPreview(); popup.style.display = 'none'; current = null; items = []; }
   function paint() {
     list.replaceChildren();
     items.forEach((name, i) => {
@@ -172,6 +274,12 @@
       icon.className = 'cm-completionIcon cm-completionIcon-sound';
       icon.setAttribute('aria-hidden', 'true');
       icon.textContent = '♪';
+      icon.title = 'Preview first sample';
+      icon.style.cursor = 'pointer';
+      icon.addEventListener('mousedown', e => {
+        e.preventDefault(); e.stopPropagation(); selected = i; paint(); schedulePreview();
+      });
+      row.title = '↑/↓ to preview · click ♪ to replay · Tab/Enter to insert';
       const label = document.createElement('span');
       label.className = 'cm-completionLabel';
       const fragment = current?.prefix || '';
@@ -201,6 +309,7 @@
       .sort((a,b) => Number(!a.toLowerCase().startsWith(fragment)) -
         Number(!b.toLowerCase().startsWith(fragment)) || a.localeCompare(b)).slice(0, 40);
     if (!items.length) return hide();
+    stopPreview();
     current = ctx;
     selected = 0;
     const coords = view.coordsAtPos(ctx.pos);
@@ -234,7 +343,7 @@
     const view = editor();
     if (!view?.hasFocus || event.isComposing) return;
     if (event.ctrlKey && event.code === 'Space') {
-      event.preventDefault(); event.stopImmediatePropagation(); last = ''; show(true); return;
+      event.preventDefault(); event.stopImmediatePropagation(); last = ''; dismissed = ''; show(true); schedulePreview(); return;
     }
     if (!current || event.metaKey || event.ctrlKey || event.altKey) return;
     if (!['ArrowDown', 'ArrowUp', 'Tab', 'Enter', 'Escape'].includes(event.key)) return;
@@ -243,13 +352,17 @@
     event.preventDefault(); event.stopImmediatePropagation();
     if (event.key === 'Escape') { dismissed = current.stamp; hide(); }
     else if (event.key === 'Tab' || event.key === 'Enter') accept(selected);
-    else { selected = (selected + (event.key === 'ArrowDown' ? 1 : -1) + items.length) % items.length; paint(); }
+    else { selected = (selected + (event.key === 'ArrowDown' ? 1 : -1) + items.length) % items.length; paint(); schedulePreview(); }
   }
   window.addEventListener('keydown', onKey, true);
   function onPointer(event) {
     if (!popup.contains(event.target)) { dismissed = current?.stamp || ''; hide(); last = ''; }
   }
   window.addEventListener('mousedown', onPointer, true);
+  function onBlur() { last = ''; hide(); }
+  function onVisibility() { if (document.hidden) onBlur(); }
+  window.addEventListener('blur', onBlur);
+  document.addEventListener('visibilitychange', onVisibility);
   const timer = setInterval(() => {
     try { discoverMaps(); if (!editor()?.hasFocus) { last = ''; hide(); } else show(); }
     catch (error) { hide(); console.warn('[Sample autocomplete]', error); }
@@ -260,17 +373,19 @@
     const urls = [...activeMaps];
     const results = await Promise.allSettled(urls.map(async url => {
       const cached = mapCache.get(url);
-      if (!force && cached && Date.now() - cached.time < 60000) return cached.names;
+      if (!force && cached && Date.now() - cached.time < 60000) return cached.entries;
       const response = await fetch(url, { cache: 'no-store', signal: controller.signal });
       if (!response.ok) throw new Error(url + ': HTTP ' + response.status);
       const map = await response.json();
       if (!map || Array.isArray(map) || typeof map !== 'object') throw new Error('Invalid sample map: ' + url);
-      const entries = Object.keys(map).filter(key => !key.startsWith('_'));
-      mapCache.set(url, { time: Date.now(), names: entries });
+      const entries = Object.keys(map).filter(key => !key.startsWith('_')).map(name => [name, previewURL(map[name], map, url)]);
+      mapCache.set(url, { time: Date.now(), entries });
       return entries;
     }));
     if (destroyed || request !== generation) return;
-    names = [...new Set(results.filter(r => r.status === 'fulfilled').flatMap(r => r.value))].sort();
+    stopPreview();
+    soundURLs = new Map(results.filter(r => r.status === 'fulfilled').flatMap(r => r.value));
+    names = [...soundURLs.keys()].sort();
     const errors = results.filter(r => r.status === 'rejected');
     status = names.length + ' names from ' + urls.length + ' referenced map(s)' +
       (errors.length ? '; ' + errors.length + ' map(s) failed' : '');
@@ -279,8 +394,14 @@
     last = '';
   }
   window.strudelSampleAutocomplete = {
+    version: '0.3.0', get previewStatus() { return previewStatus; },
     refresh: () => refresh(true), get status() { return status; },
-    destroy() { destroyed = true; controller.abort(); clearInterval(timer); clearTimeout(refreshTimer);
+    destroy() { destroyed = true; stopPreview();
+      audioCache.clear(); audioBytes = 0;
+      if (audioContext) audioContext.close().catch(() => {});
+      controller.abort(); clearInterval(timer); clearTimeout(refreshTimer);
+      window.removeEventListener('blur', onBlur);
+      document.removeEventListener('visibilitychange', onVisibility);
       window.removeEventListener('keydown', onKey, true);
       window.removeEventListener('mousedown', onPointer, true); popup.remove(); style.remove(); }
   };

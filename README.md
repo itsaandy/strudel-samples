@@ -110,7 +110,7 @@ Do not attach a blanket open-source license to third-party sample audio.
 
 Install [`userscripts/strudel-samples.user.js`](userscripts/strudel-samples.user.js)
 in Tampermonkey, replacing the entire older script rather than enabling duplicates.
-Version 0.2.0 retains the native-style completion menu and discovers literal calls:
+Version 0.3.0 retains the native-style completion menu and discovers literal calls:
 
 ```js
 samples('github:itsaandy/strudel-samples/hyperpop')
@@ -136,11 +136,38 @@ Type inside `s("...")` or `sound("...")`; use arrows and Tab/Enter to insert, Es
 close. The script uses the live editor's theme classes and preserves surrounding
 mini-notation. Keep the script source on `main`; do not copy it into pack branches.
 
+### Audition samples in autocomplete (v0.3.0)
+
+- Type a sound prefix inside `s("...")` or `sound("...")`, then use **↑/↓** to
+  select and preview a sound. Opening a menu by typing alone stays silent.
+- Click the **♪** icon to preview/replay a row without inserting it. Click its
+  name or press **Tab/Enter** to insert. **Ctrl+Space** previews the first match.
+- **Esc**, insertion, changing the query/maps, clicking outside the menu, or
+  leaving the editor/tab stops the preview. Selecting another sound stops the old one.
+- Previews wait 150 ms after navigation, use 25% linear gain, and play at most
+  three seconds at original speed/pitch, with a short fade. They use their own
+  AudioContext and the browser's default audio output; Strudel playback/effects
+  and its selected audio output are independent.
+- Group arrays preview their first variation; pitch maps preview their first
+  entry without retuning. Full HTTPS paths, relative paths, and `_base` are resolved
+  from the fetched manifest. Failed downloads/decodes leave autocomplete working;
+  hover the row for the error or check the console.
+- Audio is fetched on demand and decoded buffers are cached in memory (up to 24
+  buffers / 32 MiB). Stale requests are cancelled/ignored. A browser may require
+  another arrow key or icon click to unlock audio; no Strudel evaluation is needed.
+
+When multiple referenced maps share a name, the last distinct reference in source
+order supplies its preview. This is source-based discovery, not a reflection of
+conditional execution or the runtime registry. Use distinct names for predictable results.
+To inspect the running version/status, use `window.strudelSampleAutocomplete.version`
+and `.previewStatus` in the browser console.
+
 ### Maintenance checks
 
 ```sh
 node --check userscripts/strudel-samples.user.js
 node tests/sample-maps.cjs
+node tests/audio-preview.cjs
 python3 tests/publish-pack.py
 ```
 
