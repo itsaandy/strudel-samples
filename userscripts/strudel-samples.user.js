@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Strudel Sample Autocomplete
 // @namespace    itsaandy/strudel-samples
-// @version      0.3.0
+// @version      0.3.1
 // @description  Complete your GitHub sample names inside s() and sound() strings.
 // @match        https://strudel.cc/*
 // @run-at       document-idle
@@ -122,8 +122,13 @@
     :where(#strudel-sample-autocomplete > ul > li) {
       padding: 1px 3px; line-height: 1.2; cursor: pointer;
     }
-    :where(#strudel-sample-autocomplete > ul > li[aria-selected="true"]) {
+    /* Selection must win over theme rules even when native completion is disabled. */
+    #strudel-sample-autocomplete > ul > li[aria-selected="true"] {
       background: #347; color: white;
+      box-shadow: inset 2px 0 0 #adc6ff;
+    }
+    #strudel-sample-autocomplete > ul > li[aria-selected="true"] .cm-completionIcon {
+      opacity: 1;
     }
     :where(#strudel-sample-autocomplete .cm-completionMatchedText) {
       text-decoration: underline;
@@ -269,11 +274,12 @@
       const row = document.createElement('li');
       row.id = 'strudel-sample-option-' + i;
       row.setAttribute('role', 'option');
-      row.setAttribute('aria-selected', String(i === selected));
+      // Native themes may match attribute presence, so omit it on other rows.
+      if (i === selected) row.setAttribute('aria-selected', 'true');
       const icon = document.createElement('div');
       icon.className = 'cm-completionIcon cm-completionIcon-sound';
       icon.setAttribute('aria-hidden', 'true');
-      icon.textContent = '♪';
+      icon.textContent = i === selected ? '▶' : '♪';
       icon.title = 'Preview first sample';
       icon.style.cursor = 'pointer';
       icon.addEventListener('mousedown', e => {
@@ -394,7 +400,7 @@
     last = '';
   }
   window.strudelSampleAutocomplete = {
-    version: '0.3.0', get previewStatus() { return previewStatus; },
+    version: '0.3.1', get previewStatus() { return previewStatus; },
     refresh: () => refresh(true), get status() { return status; },
     destroy() { destroyed = true; stopPreview();
       audioCache.clear(); audioBytes = 0;

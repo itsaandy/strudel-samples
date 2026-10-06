@@ -110,7 +110,7 @@ Do not attach a blanket open-source license to third-party sample audio.
 
 Install [`userscripts/strudel-samples.user.js`](userscripts/strudel-samples.user.js)
 in Tampermonkey, replacing the entire older script rather than enabling duplicates.
-Version 0.3.0 retains the native-style completion menu and discovers literal calls:
+Version 0.3.1 retains the native-style completion menu and discovers literal calls:
 
 ```js
 samples('github:itsaandy/strudel-samples/hyperpop')
@@ -140,7 +140,10 @@ mini-notation. Keep the script source on `main`; do not copy it into pack branch
 
 - Type a sound prefix inside `s("...")` or `sound("...")`, then use **↑/↓** to
   select and preview a sound. Opening a menu by typing alone stays silent.
-- Click the **♪** icon to preview/replay a row without inserting it. Click its
+- The selected row has a blue highlight, a pale left edge, and a **▶** marker,
+  including when Strudel’s native autocomplete is disabled. The marker identifies
+  the selected preview target; it remains after playback finishes.
+- Click the **♪ / ▶** icon to preview/replay a row without inserting it. Click its
   name or press **Tab/Enter** to insert. **Ctrl+Space** previews the first match.
 - **Esc**, insertion, changing the query/maps, clicking outside the menu, or
   leaving the editor/tab stops the preview. Selecting another sound stops the old one.
