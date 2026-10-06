@@ -19,8 +19,8 @@ Pitch and BPM are recorded in filenames; sample maps do not assume an octave or 
 
 
 Named loops include their source tempo, e.g. `drums_clicks_170bpm`.
-Original short names remain compatibility aliases; group indices and audio are unchanged.
-The CSV `sound` column lists the recommended name and `legacy_sound` records its older alias.
+Old tempo-less loop aliases have been removed. Use the BPM-suffixed names; group indices and audio are unchanged.
+The CSV `sound` column lists the playable name. Reload Strudel to clear previously registered old names.
 BPM labels come from source metadata, not audio estimation; fills without source BPM remain untagged.
 
 ## Browse by group
