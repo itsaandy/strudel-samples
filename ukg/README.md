@@ -13,6 +13,12 @@ stack(
 )
 ```
 
+
+Named loops include their source tempo, e.g. `bass_loop_classic_reese_135bpm`.
+Original short names remain compatibility aliases; group indices and audio are unchanged.
+The CSV `sound` column lists the recommended name and `legacy_sound` records its older alias.
+BPM labels come from source metadata, not audio estimation; fills without source BPM remain untagged.
+
 ## Organization
 
 Individual hits use `kick`, `snare`, `clap`, `hh` (closed hats), `oh` (open hats),
@@ -23,14 +29,14 @@ and use separate groups (`bass_loop`, `keys_loop`, `vox_loop`, `perc_loop`, `fx_
 All selected keys material is loop-based; the songstarter is labeled explicitly.
 
 Filenames preserve source BPM/key labels; `fs`/`ds` mean F-sharp/D-sharp.
-Playable names omit BPM/key labels. No octave is inferred and audio is not retuned.
+Playable loop names end in `_<tempo>bpm`; one-shot names omit BPM/key labels (tempo-tagged fills also have BPM names). No octave is inferred and audio is not retuned.
 Dry/wet versions and distinct variations are retained. No byte-identical duplicates were found.
 Source folders determine loop versus one-shot classification; fills are always separate.
 The catalog retains the original filename/path, source pack, duration, and SHA-256 hash.
 
 ```js
 s("kick:0 ~ snare:1 ~") // indices are listed below
-s("drums_vibez").fit() // fit the complete loop into one pattern cycle
+s("drums_vibez_135bpm").fit() // fit the complete loop into one pattern cycle
 ```
 
 `fit()` stretches to the pattern length; choose the number of cycles for the musical phrase you want.
@@ -103,18 +109,18 @@ Keep existing indices stable when extending this pack: append new samples to eac
 
 | Index | Name | BPM | Key | File |
 | ---: | --- | ---: | --- | --- |
-| 0 | `bass_loop_classic_reese` | 135 | Fmin | [classic_reese_135_fmin.wav](bass/loops/classic_reese_135_fmin.wav) |
-| 1 | `bass_loop_deep_organ` | 135 | Dmin | [deep_organ_135_dmin.wav](bass/loops/deep_organ_135_dmin.wav) |
-| 2 | `bass_loop_freak_fm` | 135 | Dmin | [freak_fm_135_dmin.wav](bass/loops/freak_fm_135_dmin.wav) |
-| 3 | `bass_loop_gravity_reese_main` | 134 | Amin | [gravity_reese_main_134_amin.wav](bass/loops/gravity_reese_main_134_amin.wav) |
-| 4 | `bass_loop_no_fund_wob` | 132 | Gmin | [no_fund_wob_132_gmin.wav](bass/loops/no_fund_wob_132_gmin.wav) |
-| 5 | `bass_loop_organ_reese` | 132 | Gmin | [organ_reese_132_gmin.wav](bass/loops/organ_reese_132_gmin.wav) |
-| 6 | `bass_loop_over` | 135 | E | [over_135_e.wav](bass/loops/over_135_e.wav) |
-| 7 | `bass_loop_pop_organ` | 132 | Gmin | [pop_organ_132_gmin.wav](bass/loops/pop_organ_132_gmin.wav) |
-| 8 | `bass_loop_shake_groove` | 132 | Cm | [shake_groove_132_cm.wav](bass/loops/shake_groove_132_cm.wav) |
-| 9 | `bass_loop_solar` | 131 | Amin | [solar_131_amin.wav](bass/loops/solar_131_amin.wav) |
-| 10 | `bass_loop_trappy_subsonic` | 132 | Cm | [trappy_subsonic_132_cm.wav](bass/loops/trappy_subsonic_132_cm.wav) |
-| 11 | `bass_loop_turnt` | 128 | D#m | [turnt_128_dsm.wav](bass/loops/turnt_128_dsm.wav) |
+| 0 | `bass_loop_classic_reese_135bpm` | 135 | Fmin | [classic_reese_135_fmin.wav](bass/loops/classic_reese_135_fmin.wav) |
+| 1 | `bass_loop_deep_organ_135bpm` | 135 | Dmin | [deep_organ_135_dmin.wav](bass/loops/deep_organ_135_dmin.wav) |
+| 2 | `bass_loop_freak_fm_135bpm` | 135 | Dmin | [freak_fm_135_dmin.wav](bass/loops/freak_fm_135_dmin.wav) |
+| 3 | `bass_loop_gravity_reese_main_134bpm` | 134 | Amin | [gravity_reese_main_134_amin.wav](bass/loops/gravity_reese_main_134_amin.wav) |
+| 4 | `bass_loop_no_fund_wob_132bpm` | 132 | Gmin | [no_fund_wob_132_gmin.wav](bass/loops/no_fund_wob_132_gmin.wav) |
+| 5 | `bass_loop_organ_reese_132bpm` | 132 | Gmin | [organ_reese_132_gmin.wav](bass/loops/organ_reese_132_gmin.wav) |
+| 6 | `bass_loop_over_135bpm` | 135 | E | [over_135_e.wav](bass/loops/over_135_e.wav) |
+| 7 | `bass_loop_pop_organ_132bpm` | 132 | Gmin | [pop_organ_132_gmin.wav](bass/loops/pop_organ_132_gmin.wav) |
+| 8 | `bass_loop_shake_groove_132bpm` | 132 | Cm | [shake_groove_132_cm.wav](bass/loops/shake_groove_132_cm.wav) |
+| 9 | `bass_loop_solar_131bpm` | 131 | Amin | [solar_131_amin.wav](bass/loops/solar_131_amin.wav) |
+| 10 | `bass_loop_trappy_subsonic_132bpm` | 132 | Cm | [trappy_subsonic_132_cm.wav](bass/loops/trappy_subsonic_132_cm.wav) |
+| 11 | `bass_loop_turnt_128bpm` | 128 | D#m | [turnt_128_dsm.wav](bass/loops/turnt_128_dsm.wav) |
 
 ### clap
 
@@ -136,23 +142,23 @@ Keep existing indices stable when extending this pack: append new samples to eac
 
 | Index | Name | BPM | Key | File |
 | ---: | --- | ---: | --- | --- |
-| 0 | `drums_bullett` | 140 |  | [bullett_140.wav](drums/bullett_140.wav) |
-| 1 | `drums_kick_snare_silky` | 130 |  | [kick_snare_silky_130.wav](drums/kick_snare_silky_130.wav) |
-| 2 | `drums_london_dance` | 132 |  | [london_dance_132.wav](drums/london_dance_132.wav) |
-| 3 | `drums_modern` | 132 |  | [modern_132.wav](drums/modern_132.wav) |
-| 4 | `drums_tidy_step` | 132 |  | [tidy_step_132.wav](drums/tidy_step_132.wav) |
-| 5 | `drums_vibez` | 135 |  | [vibez_135.wav](drums/vibez_135.wav) |
-| 6 | `drums_vinyl_pitched_snare` | 135 |  | [vinyl_pitched_snare_135.wav](drums/vinyl_pitched_snare_135.wav) |
-| 7 | `drums_wave` | 140 |  | [wave_140.wav](drums/wave_140.wav) |
+| 0 | `drums_bullett_140bpm` | 140 |  | [bullett_140.wav](drums/bullett_140.wav) |
+| 1 | `drums_kick_snare_silky_130bpm` | 130 |  | [kick_snare_silky_130.wav](drums/kick_snare_silky_130.wav) |
+| 2 | `drums_london_dance_132bpm` | 132 |  | [london_dance_132.wav](drums/london_dance_132.wav) |
+| 3 | `drums_modern_132bpm` | 132 |  | [modern_132.wav](drums/modern_132.wav) |
+| 4 | `drums_tidy_step_132bpm` | 132 |  | [tidy_step_132.wav](drums/tidy_step_132.wav) |
+| 5 | `drums_vibez_135bpm` | 135 |  | [vibez_135.wav](drums/vibez_135.wav) |
+| 6 | `drums_vinyl_pitched_snare_135bpm` | 135 |  | [vinyl_pitched_snare_135.wav](drums/vinyl_pitched_snare_135.wav) |
+| 7 | `drums_wave_140bpm` | 140 |  | [wave_140.wav](drums/wave_140.wav) |
 
 ### fills
 
 | Index | Name | BPM | Key | File |
 | ---: | --- | ---: | --- | --- |
-| 0 | `fills_down` | 137 |  | [down_137.wav](fills/down_137.wav) |
-| 1 | `fills_jet_fuel_kick_scratch` | 135 |  | [jet_fuel_kick_scratch_135.wav](fills/jet_fuel_kick_scratch_135.wav) |
-| 2 | `fills_mini` | 135 |  | [mini_135.wav](fills/mini_135.wav) |
-| 3 | `fills_stay_spinback` | 135 |  | [stay_spinback_135.wav](fills/stay_spinback_135.wav) |
+| 0 | `fills_down_137bpm` | 137 |  | [down_137.wav](fills/down_137.wav) |
+| 1 | `fills_jet_fuel_kick_scratch_135bpm` | 135 |  | [jet_fuel_kick_scratch_135.wav](fills/jet_fuel_kick_scratch_135.wav) |
+| 2 | `fills_mini_135bpm` | 135 |  | [mini_135.wav](fills/mini_135.wav) |
+| 3 | `fills_stay_spinback_135bpm` | 135 |  | [stay_spinback_135.wav](fills/stay_spinback_135.wav) |
 
 ### fx
 
@@ -175,8 +181,8 @@ Keep existing indices stable when extending this pack: append new samples to eac
 
 | Index | Name | BPM | Key | File |
 | ---: | --- | ---: | --- | --- |
-| 0 | `fx_loop_vinyl_kicker` | 130 |  | [vinyl_kicker_130.wav](fx/loops/vinyl_kicker_130.wav) |
-| 1 | `fx_loop_vinyl_scratch_train_cuts` | 130 |  | [vinyl_scratch_train_cuts_130.wav](fx/loops/vinyl_scratch_train_cuts_130.wav) |
+| 0 | `fx_loop_vinyl_kicker_130bpm` | 130 |  | [vinyl_kicker_130.wav](fx/loops/vinyl_kicker_130.wav) |
+| 1 | `fx_loop_vinyl_scratch_train_cuts_130bpm` | 130 |  | [vinyl_scratch_train_cuts_130.wav](fx/loops/vinyl_scratch_train_cuts_130.wav) |
 
 ### hh
 
@@ -195,19 +201,19 @@ Keep existing indices stable when extending this pack: append new samples to eac
 
 | Index | Name | BPM | Key | File |
 | ---: | --- | ---: | --- | --- |
-| 0 | `keys_loop_chord_holloway_rd` | 135 | Ebmaj | [chord_holloway_rd_135_ebmaj.wav](keys/loops/chord_holloway_rd_135_ebmaj.wav) |
-| 1 | `keys_loop_chord_knowledge` | 131 | Gmin | [chord_knowledge_131_gmin.wav](keys/loops/chord_knowledge_131_gmin.wav) |
-| 2 | `keys_loop_chord_orwell` | 131 | Amin | [chord_orwell_131_amin.wav](keys/loops/chord_orwell_131_amin.wav) |
-| 3 | `keys_loop_chords_bp` | 135 | Gmin | [chords_bp_135_gmin.wav](keys/loops/chords_bp_135_gmin.wav) |
-| 4 | `keys_loop_chords_fluff` | 132 | Gmin | [chords_fluff_132_gmin.wav](keys/loops/chords_fluff_132_gmin.wav) |
-| 5 | `keys_loop_chords_organism` | 135 | Dmin | [chords_organism_135_dmin.wav](keys/loops/chords_organism_135_dmin.wav) |
-| 6 | `keys_loop_chords_pantastic` | 135 | Dmin | [chords_pantastic_135_dmin.wav](keys/loops/chords_pantastic_135_dmin.wav) |
-| 7 | `keys_loop_electric_piano_melody_silky` | 130 | D#m | [electric_piano_melody_silky_130_dsm.wav](keys/loops/electric_piano_melody_silky_130_dsm.wav) |
-| 8 | `keys_loop_lead_mini_org` | 135 | Dmin | [lead_mini_org_135_dmin.wav](keys/loops/lead_mini_org_135_dmin.wav) |
-| 9 | `keys_loop_melody_strings` | 132 | Cm | [melody_strings_132_cm.wav](keys/loops/melody_strings_132_cm.wav) |
-| 10 | `keys_loop_organ_bounce_master` | 130 | D#m | [organ_bounce_master_130_dsm.wav](keys/loops/organ_bounce_master_130_dsm.wav) |
-| 11 | `keys_loop_piano_chords_master` | 130 | D#m | [piano_chords_master_130_dsm.wav](keys/loops/piano_chords_master_130_dsm.wav) |
-| 12 | `keys_loop_songstarter_silky` | 130 | D#m | [songstarter_silky_130_dsm.wav](keys/loops/songstarter_silky_130_dsm.wav) |
+| 0 | `keys_loop_chord_holloway_rd_135bpm` | 135 | Ebmaj | [chord_holloway_rd_135_ebmaj.wav](keys/loops/chord_holloway_rd_135_ebmaj.wav) |
+| 1 | `keys_loop_chord_knowledge_131bpm` | 131 | Gmin | [chord_knowledge_131_gmin.wav](keys/loops/chord_knowledge_131_gmin.wav) |
+| 2 | `keys_loop_chord_orwell_131bpm` | 131 | Amin | [chord_orwell_131_amin.wav](keys/loops/chord_orwell_131_amin.wav) |
+| 3 | `keys_loop_chords_bp_135bpm` | 135 | Gmin | [chords_bp_135_gmin.wav](keys/loops/chords_bp_135_gmin.wav) |
+| 4 | `keys_loop_chords_fluff_132bpm` | 132 | Gmin | [chords_fluff_132_gmin.wav](keys/loops/chords_fluff_132_gmin.wav) |
+| 5 | `keys_loop_chords_organism_135bpm` | 135 | Dmin | [chords_organism_135_dmin.wav](keys/loops/chords_organism_135_dmin.wav) |
+| 6 | `keys_loop_chords_pantastic_135bpm` | 135 | Dmin | [chords_pantastic_135_dmin.wav](keys/loops/chords_pantastic_135_dmin.wav) |
+| 7 | `keys_loop_electric_piano_melody_silky_130bpm` | 130 | D#m | [electric_piano_melody_silky_130_dsm.wav](keys/loops/electric_piano_melody_silky_130_dsm.wav) |
+| 8 | `keys_loop_lead_mini_org_135bpm` | 135 | Dmin | [lead_mini_org_135_dmin.wav](keys/loops/lead_mini_org_135_dmin.wav) |
+| 9 | `keys_loop_melody_strings_132bpm` | 132 | Cm | [melody_strings_132_cm.wav](keys/loops/melody_strings_132_cm.wav) |
+| 10 | `keys_loop_organ_bounce_master_130bpm` | 130 | D#m | [organ_bounce_master_130_dsm.wav](keys/loops/organ_bounce_master_130_dsm.wav) |
+| 11 | `keys_loop_piano_chords_master_130bpm` | 130 | D#m | [piano_chords_master_130_dsm.wav](keys/loops/piano_chords_master_130_dsm.wav) |
+| 12 | `keys_loop_songstarter_silky_130bpm` | 130 | D#m | [songstarter_silky_130_dsm.wav](keys/loops/songstarter_silky_130_dsm.wav) |
 
 ### kick
 
@@ -255,9 +261,9 @@ Keep existing indices stable when extending this pack: append new samples to eac
 
 | Index | Name | BPM | Key | File |
 | ---: | --- | ---: | --- | --- |
-| 0 | `perc_loop_record_player` | 135 |  | [record_player_135.wav](perc/loops/record_player_135.wav) |
-| 1 | `perc_loop_shaker_swing` | 135 |  | [shaker_swing_135.wav](perc/loops/shaker_swing_135.wav) |
-| 2 | `perc_loop_shuffler` | 132 |  | [shuffler_132.wav](perc/loops/shuffler_132.wav) |
+| 0 | `perc_loop_record_player_135bpm` | 135 |  | [record_player_135.wav](perc/loops/record_player_135.wav) |
+| 1 | `perc_loop_shaker_swing_135bpm` | 135 |  | [shaker_swing_135.wav](perc/loops/shaker_swing_135.wav) |
+| 2 | `perc_loop_shuffler_132bpm` | 132 |  | [shuffler_132.wav](perc/loops/shuffler_132.wav) |
 
 ### snare
 
@@ -276,21 +282,21 @@ Keep existing indices stable when extending this pack: append new samples to eac
 
 | Index | Name | BPM | Key | File |
 | ---: | --- | ---: | --- | --- |
-| 0 | `tops_again` | 138 |  | [again_138.wav](tops/again_138.wav) |
-| 1 | `tops_alarmed` | 140 |  | [alarmed_140.wav](tops/alarmed_140.wav) |
-| 2 | `tops_analog_foley_hat` | 131 |  | [analog_foley_hat_131.wav](tops/analog_foley_hat_131.wav) |
-| 3 | `tops_best` | 136 |  | [best_136.wav](tops/best_136.wav) |
-| 4 | `tops_broken_intro` | 134 |  | [broken_intro_134.wav](tops/broken_intro_134.wav) |
-| 5 | `tops_bullett` | 140 |  | [bullett_140.wav](tops/bullett_140.wav) |
-| 6 | `tops_cambridge_perc_snare` | 132 |  | [cambridge_perc_snare_132.wav](tops/cambridge_perc_snare_132.wav) |
-| 7 | `tops_dubwise` | 135 |  | [dubwise_135.wav](tops/dubwise_135.wav) |
-| 8 | `tops_gurleys_radio` | 130 |  | [gurleys_radio_130.wav](tops/gurleys_radio_130.wav) |
-| 9 | `tops_hats_follow` | 134 |  | [hats_follow_134.wav](tops/hats_follow_134.wav) |
-| 10 | `tops_right` | 136 |  | [right_136.wav](tops/right_136.wav) |
-| 11 | `tops_summer` | 135 |  | [summer_135.wav](tops/summer_135.wav) |
-| 12 | `tops_sunderland_perc_snare` | 132 |  | [sunderland_perc_snare_132.wav](tops/sunderland_perc_snare_132.wav) |
-| 13 | `tops_survivor` | 135 |  | [survivor_135.wav](tops/survivor_135.wav) |
-| 14 | `tops_vibez` | 135 |  | [vibez_135.wav](tops/vibez_135.wav) |
+| 0 | `tops_again_138bpm` | 138 |  | [again_138.wav](tops/again_138.wav) |
+| 1 | `tops_alarmed_140bpm` | 140 |  | [alarmed_140.wav](tops/alarmed_140.wav) |
+| 2 | `tops_analog_foley_hat_131bpm` | 131 |  | [analog_foley_hat_131.wav](tops/analog_foley_hat_131.wav) |
+| 3 | `tops_best_136bpm` | 136 |  | [best_136.wav](tops/best_136.wav) |
+| 4 | `tops_broken_intro_134bpm` | 134 |  | [broken_intro_134.wav](tops/broken_intro_134.wav) |
+| 5 | `tops_bullett_140bpm` | 140 |  | [bullett_140.wav](tops/bullett_140.wav) |
+| 6 | `tops_cambridge_perc_snare_132bpm` | 132 |  | [cambridge_perc_snare_132.wav](tops/cambridge_perc_snare_132.wav) |
+| 7 | `tops_dubwise_135bpm` | 135 |  | [dubwise_135.wav](tops/dubwise_135.wav) |
+| 8 | `tops_gurleys_radio_130bpm` | 130 |  | [gurleys_radio_130.wav](tops/gurleys_radio_130.wav) |
+| 9 | `tops_hats_follow_134bpm` | 134 |  | [hats_follow_134.wav](tops/hats_follow_134.wav) |
+| 10 | `tops_right_136bpm` | 136 |  | [right_136.wav](tops/right_136.wav) |
+| 11 | `tops_summer_135bpm` | 135 |  | [summer_135.wav](tops/summer_135.wav) |
+| 12 | `tops_sunderland_perc_snare_132bpm` | 132 |  | [sunderland_perc_snare_132.wav](tops/sunderland_perc_snare_132.wav) |
+| 13 | `tops_survivor_135bpm` | 135 |  | [survivor_135.wav](tops/survivor_135.wav) |
+| 14 | `tops_vibez_135bpm` | 135 |  | [vibez_135.wav](tops/vibez_135.wav) |
 
 ### vox
 
@@ -306,27 +312,27 @@ Keep existing indices stable when extending this pack: append new samples to eac
 
 | Index | Name | BPM | Key | File |
 | ---: | --- | ---: | --- | --- |
-| 0 | `vox_loop_attack_dry` | 135 |  | [attack_dry_135.wav](vox/loops/attack_dry_135.wav) |
-| 1 | `vox_loop_attack_more_dry` | 135 |  | [attack_more_dry_135.wav](vox/loops/attack_more_dry_135.wav) |
-| 2 | `vox_loop_baker_vangogh_dry` | 136 |  | [baker_vangogh_dry_136.wav](vox/loops/baker_vangogh_dry_136.wav) |
-| 3 | `vox_loop_baker_vangogh_wet` | 136 |  | [baker_vangogh_wet_136.wav](vox/loops/baker_vangogh_wet_136.wav) |
-| 4 | `vox_loop_beat_hold_back_dry` | 134 |  | [beat_hold_back_dry_134.wav](vox/loops/beat_hold_back_dry_134.wav) |
-| 5 | `vox_loop_bullet` | 140 | E | [bullet_140_e.wav](vox/loops/bullet_140_e.wav) |
-| 6 | `vox_loop_chop_everybody` | 134 |  | [chop_everybody_134.wav](vox/loops/chop_everybody_134.wav) |
-| 7 | `vox_loop_chop_harrow_wet` | 135 | D#m | [chop_harrow_wet_135_dsm.wav](vox/loops/chop_harrow_wet_135_dsm.wav) |
-| 8 | `vox_loop_chop_killa_illa` | 140 |  | [chop_killa_illa_140.wav](vox/loops/chop_killa_illa_140.wav) |
-| 9 | `vox_loop_chop_killer_cardio` | 140 |  | [chop_killer_cardio_140.wav](vox/loops/chop_killer_cardio_140.wav) |
-| 10 | `vox_loop_chop_the_top_one` | 140 |  | [chop_the_top_one_140.wav](vox/loops/chop_the_top_one_140.wav) |
-| 11 | `vox_loop_criminal_ambience` | 132 | Gm | [criminal_ambience_132_gm.wav](vox/loops/criminal_ambience_132_gm.wav) |
-| 12 | `vox_loop_criminal_physical_dry` | 138 |  | [criminal_physical_dry_138.wav](vox/loops/criminal_physical_dry_138.wav) |
-| 13 | `vox_loop_droptop_wet` | 138 |  | [droptop_wet_138.wav](vox/loops/droptop_wet_138.wav) |
-| 14 | `vox_loop_feel_bridge_stack_dry` | 142 | Emin | [feel_bridge_stack_dry_142_emin.wav](vox/loops/feel_bridge_stack_dry_142_emin.wav) |
-| 15 | `vox_loop_fx_so` | 134 |  | [fx_so_134.wav](vox/loops/fx_so_134.wav) |
-| 16 | `vox_loop_gamble_dry` | 136 |  | [gamble_dry_136.wav](vox/loops/gamble_dry_136.wav) |
-| 17 | `vox_loop_harmony_feel_chorus_double_wet` | 142 | Emin | [harmony_feel_chorus_double_wet_142_emin.wav](vox/loops/harmony_feel_chorus_double_wet_142_emin.wav) |
-| 18 | `vox_loop_microphone_killa_wet` | 140 |  | [microphone_killa_wet_140.wav](vox/loops/microphone_killa_wet_140.wav) |
-| 19 | `vox_loop_over` | 135 | E | [over_135_e.wav](vox/loops/over_135_e.wav) |
-| 20 | `vox_loop_short_i_remember_wet` | 120 | D#m | [short_i_remember_wet_120_dsm.wav](vox/loops/short_i_remember_wet_120_dsm.wav) |
-| 21 | `vox_loop_take_your_body_higher_alt_wet` | 135 | D#m | [take_your_body_higher_alt_wet_135_dsm.wav](vox/loops/take_your_body_higher_alt_wet_135_dsm.wav) |
-| 22 | `vox_loop_take_your_body_higher_wet` | 135 | D#m | [take_your_body_higher_wet_135_dsm.wav](vox/loops/take_your_body_higher_wet_135_dsm.wav) |
-| 23 | `vox_loop_that_look_pitched_wet` | 130 |  | [that_look_pitched_wet_130.wav](vox/loops/that_look_pitched_wet_130.wav) |
+| 0 | `vox_loop_attack_dry_135bpm` | 135 |  | [attack_dry_135.wav](vox/loops/attack_dry_135.wav) |
+| 1 | `vox_loop_attack_more_dry_135bpm` | 135 |  | [attack_more_dry_135.wav](vox/loops/attack_more_dry_135.wav) |
+| 2 | `vox_loop_baker_vangogh_dry_136bpm` | 136 |  | [baker_vangogh_dry_136.wav](vox/loops/baker_vangogh_dry_136.wav) |
+| 3 | `vox_loop_baker_vangogh_wet_136bpm` | 136 |  | [baker_vangogh_wet_136.wav](vox/loops/baker_vangogh_wet_136.wav) |
+| 4 | `vox_loop_beat_hold_back_dry_134bpm` | 134 |  | [beat_hold_back_dry_134.wav](vox/loops/beat_hold_back_dry_134.wav) |
+| 5 | `vox_loop_bullet_140bpm` | 140 | E | [bullet_140_e.wav](vox/loops/bullet_140_e.wav) |
+| 6 | `vox_loop_chop_everybody_134bpm` | 134 |  | [chop_everybody_134.wav](vox/loops/chop_everybody_134.wav) |
+| 7 | `vox_loop_chop_harrow_wet_135bpm` | 135 | D#m | [chop_harrow_wet_135_dsm.wav](vox/loops/chop_harrow_wet_135_dsm.wav) |
+| 8 | `vox_loop_chop_killa_illa_140bpm` | 140 |  | [chop_killa_illa_140.wav](vox/loops/chop_killa_illa_140.wav) |
+| 9 | `vox_loop_chop_killer_cardio_140bpm` | 140 |  | [chop_killer_cardio_140.wav](vox/loops/chop_killer_cardio_140.wav) |
+| 10 | `vox_loop_chop_the_top_one_140bpm` | 140 |  | [chop_the_top_one_140.wav](vox/loops/chop_the_top_one_140.wav) |
+| 11 | `vox_loop_criminal_ambience_132bpm` | 132 | Gm | [criminal_ambience_132_gm.wav](vox/loops/criminal_ambience_132_gm.wav) |
+| 12 | `vox_loop_criminal_physical_dry_138bpm` | 138 |  | [criminal_physical_dry_138.wav](vox/loops/criminal_physical_dry_138.wav) |
+| 13 | `vox_loop_droptop_wet_138bpm` | 138 |  | [droptop_wet_138.wav](vox/loops/droptop_wet_138.wav) |
+| 14 | `vox_loop_feel_bridge_stack_dry_142bpm` | 142 | Emin | [feel_bridge_stack_dry_142_emin.wav](vox/loops/feel_bridge_stack_dry_142_emin.wav) |
+| 15 | `vox_loop_fx_so_134bpm` | 134 |  | [fx_so_134.wav](vox/loops/fx_so_134.wav) |
+| 16 | `vox_loop_gamble_dry_136bpm` | 136 |  | [gamble_dry_136.wav](vox/loops/gamble_dry_136.wav) |
+| 17 | `vox_loop_harmony_feel_chorus_double_wet_142bpm` | 142 | Emin | [harmony_feel_chorus_double_wet_142_emin.wav](vox/loops/harmony_feel_chorus_double_wet_142_emin.wav) |
+| 18 | `vox_loop_microphone_killa_wet_140bpm` | 140 |  | [microphone_killa_wet_140.wav](vox/loops/microphone_killa_wet_140.wav) |
+| 19 | `vox_loop_over_135bpm` | 135 | E | [over_135_e.wav](vox/loops/over_135_e.wav) |
+| 20 | `vox_loop_short_i_remember_wet_120bpm` | 120 | D#m | [short_i_remember_wet_120_dsm.wav](vox/loops/short_i_remember_wet_120_dsm.wav) |
+| 21 | `vox_loop_take_your_body_higher_alt_wet_135bpm` | 135 | D#m | [take_your_body_higher_alt_wet_135_dsm.wav](vox/loops/take_your_body_higher_alt_wet_135_dsm.wav) |
+| 22 | `vox_loop_take_your_body_higher_wet_135bpm` | 135 | D#m | [take_your_body_higher_wet_135_dsm.wav](vox/loops/take_your_body_higher_wet_135_dsm.wav) |
+| 23 | `vox_loop_that_look_pitched_wet_130bpm` | 130 |  | [that_look_pitched_wet_130.wav](vox/loops/that_look_pitched_wet_130.wav) |

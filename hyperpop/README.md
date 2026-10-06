@@ -7,6 +7,12 @@ Other named sounds use a short category: `kick_cute`, `snare_smack`, `synth_bubb
 Dry variants use the base group; wet variants use `_wet`.
 Pitch and BPM are recorded in filenames; sample maps do not assume an octave or retune the audio.
 
+
+Named loops include their source tempo, e.g. `drums_clicks_170bpm`.
+Original short names remain compatibility aliases; group indices and audio are unchanged.
+The CSV `sound` column lists the recommended name and `legacy_sound` records its older alias.
+BPM labels come from source metadata, not audio estimation; fills without source BPM remain untagged.
+
 ## Browse by group
 
 | Group | Samples | Example |
@@ -35,7 +41,7 @@ Loading the map registers these names globally in Strudel, replacing any existin
 Loop filenames retain their source BPM. Use `fit()` to stretch a loop over its pattern cycle:
 
 ```js
-s("drums_hop").fit()
+s("drums_hop_100bpm").fit()
 ```
 
 ## Sample catalog
@@ -61,38 +67,38 @@ The [CSV catalog](catalog.csv) also records each original filename.
 
 | Index | Sound name | File |
 | ---: | --- | --- |
-| 0 | `drums_clicks` | [clicks_170.wav](drums/clicks_170.wav) |
-| 1 | `drums_clicks_tops` | [clicks_170_tops.wav](drums/clicks_170_tops.wav) |
-| 2 | `drums_creaky` | [creaky_170.wav](drums/creaky_170.wav) |
-| 3 | `drums_creaky_tops` | [creaky_170_tops.wav](drums/creaky_170_tops.wav) |
-| 4 | `drums_grind` | [grind_140.wav](drums/grind_140.wav) |
-| 5 | `drums_grind_tops` | [grind_140_tops.wav](drums/grind_140_tops.wav) |
-| 6 | `drums_heavy` | [heavy_120.wav](drums/heavy_120.wav) |
-| 7 | `drums_heavy_tops` | [heavy_120_tops.wav](drums/heavy_120_tops.wav) |
-| 8 | `drums_hop` | [hop_100.wav](drums/hop_100.wav) |
-| 9 | `drums_hop_tops` | [hop_100_tops.wav](drums/hop_100_tops.wav) |
-| 10 | `drums_house` | [house_120.wav](drums/house_120.wav) |
-| 11 | `drums_house_tops` | [house_120_tops.wav](drums/house_120_tops.wav) |
-| 12 | `drums_jump` | [jump_140.wav](drums/jump_140.wav) |
-| 13 | `drums_jump_tops` | [jump_140_tops.wav](drums/jump_140_tops.wav) |
-| 14 | `drums_loud` | [loud_140.wav](drums/loud_140.wav) |
-| 15 | `drums_loud_tops` | [loud_140_tops.wav](drums/loud_140_tops.wav) |
-| 16 | `drums_nod` | [nod_170.wav](drums/nod_170.wav) |
-| 17 | `drums_nod_tops` | [nod_170_tops.wav](drums/nod_170_tops.wav) |
-| 18 | `drums_scraps` | [scraps_100.wav](drums/scraps_100.wav) |
-| 19 | `drums_scraps_tops` | [scraps_100_tops.wav](drums/scraps_100_tops.wav) |
-| 20 | `drums_scream` | [scream_140.wav](drums/scream_140.wav) |
-| 21 | `drums_scream_tops` | [scream_140_tops.wav](drums/scream_140_tops.wav) |
-| 22 | `drums_snarl` | [snarl_120.wav](drums/snarl_120.wav) |
-| 23 | `drums_snarl_tops` | [snarl_120_tops.wav](drums/snarl_120_tops.wav) |
-| 24 | `drums_spacey` | [spacey_100.wav](drums/spacey_100.wav) |
-| 25 | `drums_spacey_tops` | [spacey_100_tops.wav](drums/spacey_100_tops.wav) |
-| 26 | `drums_squeaky` | [squeaky_120.wav](drums/squeaky_120.wav) |
-| 27 | `drums_squeaky_tops` | [squeaky_120_tops.wav](drums/squeaky_120_tops.wav) |
-| 28 | `drums_stomp` | [stomp_100.wav](drums/stomp_100.wav) |
-| 29 | `drums_stomp_tops` | [stomp_100_tops.wav](drums/stomp_100_tops.wav) |
-| 30 | `drums_wet` | [wet_170.wav](drums/wet_170.wav) |
-| 31 | `drums_wet_tops` | [wet_170_tops.wav](drums/wet_170_tops.wav) |
+| 0 | `drums_clicks_170bpm` | [clicks_170.wav](drums/clicks_170.wav) |
+| 1 | `drums_clicks_tops_170bpm` | [clicks_170_tops.wav](drums/clicks_170_tops.wav) |
+| 2 | `drums_creaky_170bpm` | [creaky_170.wav](drums/creaky_170.wav) |
+| 3 | `drums_creaky_tops_170bpm` | [creaky_170_tops.wav](drums/creaky_170_tops.wav) |
+| 4 | `drums_grind_140bpm` | [grind_140.wav](drums/grind_140.wav) |
+| 5 | `drums_grind_tops_140bpm` | [grind_140_tops.wav](drums/grind_140_tops.wav) |
+| 6 | `drums_heavy_120bpm` | [heavy_120.wav](drums/heavy_120.wav) |
+| 7 | `drums_heavy_tops_120bpm` | [heavy_120_tops.wav](drums/heavy_120_tops.wav) |
+| 8 | `drums_hop_100bpm` | [hop_100.wav](drums/hop_100.wav) |
+| 9 | `drums_hop_tops_100bpm` | [hop_100_tops.wav](drums/hop_100_tops.wav) |
+| 10 | `drums_house_120bpm` | [house_120.wav](drums/house_120.wav) |
+| 11 | `drums_house_tops_120bpm` | [house_120_tops.wav](drums/house_120_tops.wav) |
+| 12 | `drums_jump_140bpm` | [jump_140.wav](drums/jump_140.wav) |
+| 13 | `drums_jump_tops_140bpm` | [jump_140_tops.wav](drums/jump_140_tops.wav) |
+| 14 | `drums_loud_140bpm` | [loud_140.wav](drums/loud_140.wav) |
+| 15 | `drums_loud_tops_140bpm` | [loud_140_tops.wav](drums/loud_140_tops.wav) |
+| 16 | `drums_nod_170bpm` | [nod_170.wav](drums/nod_170.wav) |
+| 17 | `drums_nod_tops_170bpm` | [nod_170_tops.wav](drums/nod_170_tops.wav) |
+| 18 | `drums_scraps_100bpm` | [scraps_100.wav](drums/scraps_100.wav) |
+| 19 | `drums_scraps_tops_100bpm` | [scraps_100_tops.wav](drums/scraps_100_tops.wav) |
+| 20 | `drums_scream_140bpm` | [scream_140.wav](drums/scream_140.wav) |
+| 21 | `drums_scream_tops_140bpm` | [scream_140_tops.wav](drums/scream_140_tops.wav) |
+| 22 | `drums_snarl_120bpm` | [snarl_120.wav](drums/snarl_120.wav) |
+| 23 | `drums_snarl_tops_120bpm` | [snarl_120_tops.wav](drums/snarl_120_tops.wav) |
+| 24 | `drums_spacey_100bpm` | [spacey_100.wav](drums/spacey_100.wav) |
+| 25 | `drums_spacey_tops_100bpm` | [spacey_100_tops.wav](drums/spacey_100_tops.wav) |
+| 26 | `drums_squeaky_120bpm` | [squeaky_120.wav](drums/squeaky_120.wav) |
+| 27 | `drums_squeaky_tops_120bpm` | [squeaky_120_tops.wav](drums/squeaky_120_tops.wav) |
+| 28 | `drums_stomp_100bpm` | [stomp_100.wav](drums/stomp_100.wav) |
+| 29 | `drums_stomp_tops_100bpm` | [stomp_100_tops.wav](drums/stomp_100_tops.wav) |
+| 30 | `drums_wet_170bpm` | [wet_170.wav](drums/wet_170.wav) |
+| 31 | `drums_wet_tops_170bpm` | [wet_170_tops.wav](drums/wet_170_tops.wav) |
 
 ### extra
 
@@ -163,17 +169,17 @@ The [CSV catalog](catalog.csv) also records each original filename.
 
 | Index | Sound name | File |
 | ---: | --- | --- |
-| 0 | `melody_airy_organ` | [airy_organ_130_amin.wav](melody/airy_organ_130_amin.wav) |
-| 1 | `melody_cheesy` | [cheesy_115_c.wav](melody/cheesy_115_c.wav) |
-| 2 | `melody_cutesy` | [cutesy_105_amin.wav](melody/cutesy_105_amin.wav) |
-| 3 | `melody_gallop` | [gallop_120_bmin.wav](melody/gallop_120_bmin.wav) |
-| 4 | `melody_grainy` | [grainy_135_emin.wav](melody/grainy_135_emin.wav) |
-| 5 | `melody_indifferent` | [indifferent_120_amin.wav](melody/indifferent_120_amin.wav) |
-| 6 | `melody_intense_arpeggio` | [intense_arpeggio_150_emin.wav](melody/intense_arpeggio_150_emin.wav) |
-| 7 | `melody_low` | [low_125_f.wav](melody/low_125_f.wav) |
-| 8 | `melody_plucks` | [plucks_140_a.wav](melody/plucks_140_a.wav) |
-| 9 | `melody_strum` | [strum_90_e.wav](melody/strum_90_e.wav) |
-| 10 | `melody_vocal` | [vocal_120_c.wav](melody/vocal_120_c.wav) |
+| 0 | `melody_airy_organ_130bpm` | [airy_organ_130_amin.wav](melody/airy_organ_130_amin.wav) |
+| 1 | `melody_cheesy_115bpm` | [cheesy_115_c.wav](melody/cheesy_115_c.wav) |
+| 2 | `melody_cutesy_105bpm` | [cutesy_105_amin.wav](melody/cutesy_105_amin.wav) |
+| 3 | `melody_gallop_120bpm` | [gallop_120_bmin.wav](melody/gallop_120_bmin.wav) |
+| 4 | `melody_grainy_135bpm` | [grainy_135_emin.wav](melody/grainy_135_emin.wav) |
+| 5 | `melody_indifferent_120bpm` | [indifferent_120_amin.wav](melody/indifferent_120_amin.wav) |
+| 6 | `melody_intense_arpeggio_150bpm` | [intense_arpeggio_150_emin.wav](melody/intense_arpeggio_150_emin.wav) |
+| 7 | `melody_low_125bpm` | [low_125_f.wav](melody/low_125_f.wav) |
+| 8 | `melody_plucks_140bpm` | [plucks_140_a.wav](melody/plucks_140_a.wav) |
+| 9 | `melody_strum_90bpm` | [strum_90_e.wav](melody/strum_90_e.wav) |
+| 10 | `melody_vocal_120bpm` | [vocal_120_c.wav](melody/vocal_120_c.wav) |
 
 ### perc
 

@@ -75,6 +75,19 @@ combined map. The explicit `main/hyperpop/strudel.json` URL remains supported.
 Loading a pack does not clear previously registered sounds. Names are global in
 Strudel; when multiple packs define the same name, load order matters.
 
+### Loop tempo names
+
+Named loops carry a `_<tempo>bpm` suffix, e.g. `drums_hop_100bpm` (Hyperpop)
+and `drums_vibez_135bpm` (UKG). Tempo-tagged UKG fills follow the same convention.
+The combined map uses `ukg_drums_vibez_135bpm`. Older names remain aliases to the
+same files, so existing patterns and group indices keep working. Autocomplete
+will show both names after refreshing its sample maps.
+
+For future agents: retain source BPM in playable loop names as well as filenames.
+Use catalog/source metadata; do not guess missing tempos. Keep `sound` as the
+recommended name, `legacy_sound` as its previous alias, and `bpm` as source tempo.
+Do not remove existing aliases or reorder group arrays when adding metadata.
+
 ### Add or update a pack
 
 1. Work in a temporary checkout under `/tmp`. Copy original audio there before

@@ -921,5 +921,134 @@
   ],
   "yah": [
     "vox/yah.wav"
+  ],
+  "drums_clicks_170bpm": [
+    "drums/clicks_170.wav"
+  ],
+  "drums_clicks_tops_170bpm": [
+    "drums/clicks_170_tops.wav"
+  ],
+  "drums_creaky_170bpm": [
+    "drums/creaky_170.wav"
+  ],
+  "drums_creaky_tops_170bpm": [
+    "drums/creaky_170_tops.wav"
+  ],
+  "drums_grind_140bpm": [
+    "drums/grind_140.wav"
+  ],
+  "drums_grind_tops_140bpm": [
+    "drums/grind_140_tops.wav"
+  ],
+  "drums_heavy_120bpm": [
+    "drums/heavy_120.wav"
+  ],
+  "drums_heavy_tops_120bpm": [
+    "drums/heavy_120_tops.wav"
+  ],
+  "drums_hop_100bpm": [
+    "drums/hop_100.wav"
+  ],
+  "drums_hop_tops_100bpm": [
+    "drums/hop_100_tops.wav"
+  ],
+  "drums_house_120bpm": [
+    "drums/house_120.wav"
+  ],
+  "drums_house_tops_120bpm": [
+    "drums/house_120_tops.wav"
+  ],
+  "drums_jump_140bpm": [
+    "drums/jump_140.wav"
+  ],
+  "drums_jump_tops_140bpm": [
+    "drums/jump_140_tops.wav"
+  ],
+  "drums_loud_140bpm": [
+    "drums/loud_140.wav"
+  ],
+  "drums_loud_tops_140bpm": [
+    "drums/loud_140_tops.wav"
+  ],
+  "drums_nod_170bpm": [
+    "drums/nod_170.wav"
+  ],
+  "drums_nod_tops_170bpm": [
+    "drums/nod_170_tops.wav"
+  ],
+  "drums_scraps_100bpm": [
+    "drums/scraps_100.wav"
+  ],
+  "drums_scraps_tops_100bpm": [
+    "drums/scraps_100_tops.wav"
+  ],
+  "drums_scream_140bpm": [
+    "drums/scream_140.wav"
+  ],
+  "drums_scream_tops_140bpm": [
+    "drums/scream_140_tops.wav"
+  ],
+  "drums_snarl_120bpm": [
+    "drums/snarl_120.wav"
+  ],
+  "drums_snarl_tops_120bpm": [
+    "drums/snarl_120_tops.wav"
+  ],
+  "drums_spacey_100bpm": [
+    "drums/spacey_100.wav"
+  ],
+  "drums_spacey_tops_100bpm": [
+    "drums/spacey_100_tops.wav"
+  ],
+  "drums_squeaky_120bpm": [
+    "drums/squeaky_120.wav"
+  ],
+  "drums_squeaky_tops_120bpm": [
+    "drums/squeaky_120_tops.wav"
+  ],
+  "drums_stomp_100bpm": [
+    "drums/stomp_100.wav"
+  ],
+  "drums_stomp_tops_100bpm": [
+    "drums/stomp_100_tops.wav"
+  ],
+  "drums_wet_170bpm": [
+    "drums/wet_170.wav"
+  ],
+  "drums_wet_tops_170bpm": [
+    "drums/wet_170_tops.wav"
+  ],
+  "melody_airy_organ_130bpm": [
+    "melody/airy_organ_130_amin.wav"
+  ],
+  "melody_cheesy_115bpm": [
+    "melody/cheesy_115_c.wav"
+  ],
+  "melody_cutesy_105bpm": [
+    "melody/cutesy_105_amin.wav"
+  ],
+  "melody_gallop_120bpm": [
+    "melody/gallop_120_bmin.wav"
+  ],
+  "melody_grainy_135bpm": [
+    "melody/grainy_135_emin.wav"
+  ],
+  "melody_indifferent_120bpm": [
+    "melody/indifferent_120_amin.wav"
+  ],
+  "melody_intense_arpeggio_150bpm": [
+    "melody/intense_arpeggio_150_emin.wav"
+  ],
+  "melody_low_125bpm": [
+    "melody/low_125_f.wav"
+  ],
+  "melody_plucks_140bpm": [
+    "melody/plucks_140_a.wav"
+  ],
+  "melody_strum_90bpm": [
+    "melody/strum_90_e.wav"
+  ],
+  "melody_vocal_120bpm": [
+    "melody/vocal_120_c.wav"
   ]
 }
